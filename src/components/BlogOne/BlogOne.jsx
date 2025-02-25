@@ -65,14 +65,14 @@ const BlogOne = ({ two }) => {
                                 <div className="blog-card__bg"></div>
                                 <div className="blog-card__meta">
                                     <div className="blog-card__meta__date" dangerouslySetInnerHTML={{ __html: date }}></div>
-                                    <div className="blog-card__meta__year">2023</div>
+                                    <div className="blog-card__meta__year">2025</div>
                                     <div className="blog-card__meta__comments">
                                         <i className="icofont-speech-comments"></i>Comments ({comments})
                                     </div>
                                 </div>
                                 <div className="blog-card__content">
                                     <h3 className="blog-card__title"><Link href={href}>{title}</Link></h3>
-                                    <p className="blog-card__text">{text}</p>
+                                    {/* <p className="blog-card__text">{text}</p> */}
                                     <Link href={href} className="blog-card__link">
                                         Read more
                                         <i className="icofont-rounded-double-right"></i>

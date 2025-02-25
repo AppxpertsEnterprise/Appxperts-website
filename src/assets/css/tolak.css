@@ -4458,12 +4458,13 @@ h6 {
   }
 }
 
+
 .topbar-one::after {
   position: absolute;
   right: 0;
   top: 0;
   content: "";
-  width: 16.4%;
+  /* width: 16.4%; */
   height: 100%;
   background-color: var(--tolak-white, #fff);
 }
@@ -4754,7 +4755,7 @@ h6 {
 .main-header::after {
   position: absolute;
   left: 0;
-  bottom: -46px;
+  bottom: 0;
   content: "";
   width: 16.4%;
   height: 46px;

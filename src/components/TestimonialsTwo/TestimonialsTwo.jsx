@@ -82,9 +82,9 @@ const TestimonialsTwo = ({ page }) => {
                       </div>
                     </div>
                     <div className='testimonials-card-two__author'>
-                      <div className='testimonials-card-two__image'>
+                      {/* <div className='testimonials-card-two__image'>
                         <Image src={image} alt={name} />
-                      </div>
+                      </div> */}
                       <h3 className='testimonials-card-two__name'>{name}</h3>
                       <p className='testimonials-card-two__designation'>
                         {designation}

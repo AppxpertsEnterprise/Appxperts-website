@@ -1,16 +1,38 @@
 {
   "pages": {
-    "/(pages)/home1/page": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/home1/page.css",
-      "static/chunks/app/(pages)/home1/page.js"
+      "static/css/app/(pages)/about/page.css",
+      "static/chunks/app/(pages)/about/page.js"
     ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(pages)/layout.css",
       "static/chunks/app/(pages)/layout.js"
+    ],
+    "/(pages)/home1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/home1/page.css",
+      "static/chunks/app/(pages)/home1/page.js"
+    ],
+    "/(pages)/blog-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog-details/page.js"
+    ],
+    "/(pages)/reviews/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/reviews/page.css",
+      "static/chunks/app/(pages)/reviews/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

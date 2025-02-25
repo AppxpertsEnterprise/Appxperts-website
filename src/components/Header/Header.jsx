@@ -13,20 +13,52 @@ import useScrollUp from "@/hooks/useScrollUp";
 const { navItems, main_logo, logo_light, logo_rtl } = headerData;
 
 const Header = ({ dark, rtl }) => {
-  const [mounted, setMounted] = useState(false)
-  const scrollToTop = useScrollUp(500)
+  const [mounted, setMounted] = useState(false);
+  const scrollToTop = useScrollUp(500);
+  
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
+  // State for padding adjustment
+  const [paddingBottom, setPaddingBottom] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth === window.screen.width) { 
+        // Full-width (100% of screen width)
+        setPaddingBottom(0);
+      } else if (window.innerWidth <= 576) { 
+        // Mobile screens
+        setPaddingBottom(10);
+      } else if (window.innerWidth <= 768) { 
+        // Tablet screens
+        setPaddingBottom(15);
+      } else if (window.innerWidth <= 1024) { 
+        // Laptop screens
+        setPaddingBottom(20);
+      } else { 
+        // Desktop screens
+        setPaddingBottom(50);
+      }
+    };
+    
+
+    // Run on mount & listen to resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const { toggleSearch, handleToggle, toggleSidebar } = useRootContext();
 
   if (!mounted) {
-    return null
+    return null;
   }
+
   return (
-    <header className={`main-header sticky-header sticky-header--normal  ${scrollToTop ? "active" : ""}`}>
+    <header className={`main-header sticky-header sticky-header--normal ${scrollToTop ? "active" : ""}`}>
       <Container fluid>
         <div className='main-header__inner'>
           <div className='main-header__logo'>
@@ -35,7 +67,8 @@ const Header = ({ dark, rtl }) => {
                 src={dark ? logo_light : rtl ? logo_rtl : main_logo}
                 alt='Tolak HTML'
                 width={185}
-                style={{ height: "auto" }}
+                height={50} // Prevents layout shift
+                style={{ height: "auto", paddingBottom: `${paddingBottom}px` }}
               />
             </Link>
           </div>
@@ -43,7 +76,6 @@ const Header = ({ dark, rtl }) => {
           <nav className='main-header__nav main-menu'>
             <ul className='main-menu__list'>
               <MegaMenu pageTitle='home' />
-
 
               {navItems.map((item) => (
                 <NavItems key={item.id} item={item} />
@@ -53,31 +85,12 @@ const Header = ({ dark, rtl }) => {
             </ul>
           </nav>
           <div className='main-header__right'>
-            <div
-              onClick={handleToggle}
-              className='mobile-nav__btn mobile-nav__toggler'
-            >
+            <div onClick={handleToggle} className='mobile-nav__btn mobile-nav__toggler'>
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <Link
-              href='#'
-              onClick={toggleSearch}
-              className='search-toggler main-header__search'
-            >
-              <i className='icon-magnifying-glass' aria-hidden='true'></i>
-              <span className='sr-only'>Search</span>
-            </Link>
-            {/* <a href='cart' className='main-header__cart'>
-              <i className='icon-shopping-cart' aria-hidden='true'></i>
-              <span className='sr-only'>Search</span>
-            </a> */}
-            <Link
-              href='#'
-              className='main-header__toggler'
-              onClick={toggleSidebar}
-            >
+            <Link href='#' className='main-header__toggler' onClick={toggleSidebar}>
               <span></span>
               <span></span>
               <span></span>
@@ -86,10 +99,6 @@ const Header = ({ dark, rtl }) => {
               <span></span>
               <span></span>
               <span></span>
-              <span></span>
-            </Link>
-            <Link href='contact' className='tolak-btn main-header__btn'>
-              <b>Discover More</b>
               <span></span>
             </Link>
           </div>

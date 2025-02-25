@@ -13,7 +13,7 @@ const serviceTwoData = {
             image: image1,
             icon: "icon-cooperation",
             title: "Website Design and Development",
-            text: "Get access to the top-notch technology services by experts without having to grow your employee headcount and administration overhead.",
+            text: "Get access to the top-notch technology services by experts.",
             href: "business-growth"
         },
         {
@@ -21,7 +21,7 @@ const serviceTwoData = {
             image: image2,
             icon: "icon-ads-campaign",
             title: "ERP Software Development",
-            text: "AppXperts provides powerful and reliable ERP software development services which are loaded with unique features customizable & scalable as per your Needs.",
+            text: "AppXperts provides powerful and reliable ERP software development services.",
             href: "business-solution"
         },
         {

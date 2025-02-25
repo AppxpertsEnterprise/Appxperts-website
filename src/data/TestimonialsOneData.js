@@ -15,7 +15,7 @@ const testimonialsOneData = {
             icon: "icofont-quote-left",
             content: "Many designers listen but do not understand. Appxperts' staff listens to the organization's heartbeat and designs to the highest quality. We have worked with Logo Design.",
             name: "Salsabeel",
-            designation: "Founder",
+            designation: "Founder", 
             rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star"]
         },
         {

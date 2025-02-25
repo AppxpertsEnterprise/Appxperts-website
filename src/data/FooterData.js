@@ -29,7 +29,7 @@ const widgetSocial = [
   { id: 1, icon: faFacebookF, href: "https://www.facebook.com/AppXes", title: "Facebook" },
   { id: 2, icon: faInstagram, href: "https://www.instagram.com/appxperts.solutions/", title: "Instagram" },
   { id: 3, icon: faLinkedin, href: "https://www.linkedin.com/company/appxperts-enterprise-solutions/", title: "LinkedIn" },
-  { id: 4, icon: faWhatsapp, href: "https://wa.me/6584399317", title: "WhatsApp" },
+  { id: 4, icon: faWhatsapp, href: "https://wa.me/+918825528905", title: "WhatsApp" },
   { id: 5, icon: faEnvelope, href: "mailto:info@appxes.com", title: "Mail" },
 ];
 
@@ -39,7 +39,7 @@ const posts = {
     {
       id: 1,
       image: post1,
-      meta: "23 jun 2023",
+      meta: "23 Jun 2023",
       title: "We round solution york Blog",
       href: "blog-details",
       icon: "icofont-calendar",
@@ -47,7 +47,7 @@ const posts = {
     {
       id: 2,
       image: post2,
-      meta: "23 jun 2023",
+      meta: "23 Jun 2023",
       title: "We Should be Descriptive",
       href: "blog-details",
       icon: "icofont-calendar",
@@ -68,7 +68,7 @@ const postsSix = {
     {
       id: 2,
       image: post7,
-      meta: "23 jun 2024",
+      meta: "23 Jun 2024",
       title: "Looking For a Solution Related",
       href: "blog-details",
       icon: "icofont-calendar",
@@ -90,38 +90,55 @@ const footerData = {
   footerAbout,
   posts,
   postsSix,
-  aboutTwoText: "Will give you a complete account the system, and expound the teachings of the great explorer the truth, the master-builder because ...",
+  aboutTwoText:
+    "We are a cutting-edge software solutions provider, delivering high-quality products with a focus on innovation and client satisfaction.",
   widgetText:
-    "Automotive’s four Frederick locations continues its years tradition of quality auto repair services. Vehicle owners in gym enter and take a look.",
+    "Appxperts offers industry-leading software solutions, specializing in web and mobile development, cloud services, and enterprise solutions.",
   widgetInfo: {
-    time: "Open Hours:\n Mon - Fri: 10.00 am. - 6.00 pm.",
+    time: "Open Hours:\n Mon - Sat: 10.00 am - 7.00 pm",
     timeIcon: "icofont-clock-time",
-    location: "No 32, 2nd Floor, Swathika Flats, Rukmani Nagar, Perumbakkam Chennai 600100.",
+    location: "No 32, 2nd Floor, Swathika Flats, Rukmani Nagar, Perumbakkam, Chennai 600100",
     locationIcon: "icofont-location-pin",
     tel: "+91 8825528905",
     telIcon: "icofont-phone",
     subHref: "tel",
   },
   widgetSocial,
+  
   services: [
-    { id: 1, href: "/about", title: "Why choose us" },
-    { id: 2, href: "/services", title: "Our Service" },
+    { id: 1, href: "/about", title: "Why Choose Us" },
+    { id: 2, href: "/services", title: "Our Services" },
     { id: 3, href: "/reviews", title: "Partners" },
-    { id: 4, href: "/contact", title: "Core values" },
-    { id: 5, href: "/project", title: "Our products" },
+    // { id: 4, href: "/contact", title: "Core Values" },
+    { id: 5, href: "/project", title: "Our Products" },
   ],
+
   quickLinks: [
     { id: 1, href: "/gallery", title: "Clients" },
     { id: 2, href: "/packages", title: "Packages" },
-    // { id: 3, href: "/team", title: "Team" },
-    { id: 4, href: "/contact", title: "Contact" },
-   { id: 5, href: "/blog-grid-right", title: "blog" },
+    { id: 3, href: "/contact", title: "Contact" },
+    { id: 4, href: "/blog-grid-right", title: "Blog" },
   ],
+
+  aboutAppxperts: [
+    { id: 1, href: "/about", title: "Who We Are" },
+    // { id: 2, href: "/mission", title: "Our Mission" },
+    // { id: 3, href: "/vision", title: "Our Vision" },
+    // { id: 4, href: "/careers", title: "Careers" },
+    { id: 5, href: "/contact", title: "Contact Us" },
+  ],
+
+  // technologies: [
+  //   { id: 1, href: "/technologies/react-nextjs", title: "React & Next.js" },
+  //   { id: 2, href: "/technologies/node-express", title: "Node.js & Express" },
+  //   { id: 3, href: "/technologies/mongodb-mysql", title: "MongoDB & MySQL" },
+  //   { id: 4, href: "/technologies/cloud-devops", title: "Cloud & DevOps" },
+  //   { id: 5, href: "/technologies/ai-ml", title: "AI & Machine Learning" },
+  // ],
+
   bottomLinks: [
     { id: 1, href: "/about", title: "About Us" },
     { id: 2, href: "/services", title: "Services" },
-    // { id: 3, href: "/blog", title: "blog" },
-    // { id: 4, href: "/portfolio", title: "Portfolio" },
   ],
 };
 

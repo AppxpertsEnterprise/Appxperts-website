@@ -18,7 +18,12 @@ const page = () => {
         <Layout>
             <HeaderInner />
             <HeaderInnerCloned />
-            <PageHeader title="News Details" subTitle="Blog Details" />
+            <PageHeader 
+    title={<span style={{ fontSize: "28px", fontWeight: "700", color: "#ffffff", textAlign: "center" }}>
+        Smart Solutions, Stronger Businesses – Powered by Appxperts.
+    </span>}
+/>
+
             <BlogDetails />
             <MailTwo />
             <FooterThree />

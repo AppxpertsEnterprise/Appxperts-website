@@ -8,9 +8,8 @@ import ProjectTwo from "@/components/ProjectsTwo/ProjectsTwo";
 import React from "react";
 
 export const metadata = {
-  title: "Project Page || Tolak || NextJS Template For It Solution & Business",
-  description:
-    "Tolak is a modern NextJS Template for Business, It Solution, Corporate, Agency, Portfolio shops. The template perfectly fits Beauty Spa, Salon, and Wellness Treatments websites and businesses.",
+  title: "Appxperts Enterprise Solution.",
+  
 };
 
 const projectPage = () => {

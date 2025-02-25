@@ -4,15 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+
 const {
   footerBgThree,
   shapeTwo,
   footerLogo,
-  posts,
   widgetText,
-  widgetInfo,
   widgetSocial,
-  footerAbout,
   services,
   quickLinks,
   bottomLinks,
@@ -21,10 +19,10 @@ const {
 const FooterThree = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className='main-footer-three background-black'>
+    <footer className='main-footer-three background-black' style={{ paddingBottom: "0", marginBottom: "0" }}>
       <div
         className='main-footer-three__bg background-black'
-        style={{ backgroundImage: `url(${footerBgThree.src})` }}
+        style={{ backgroundImage: `url(${footerBgThree.src})`, paddingBottom: "0" }}
       ></div>
 
       <div
@@ -39,12 +37,15 @@ const FooterThree = () => {
                 <Image
                   src={footerLogo}
                   width={184}
-                  style={{ height: "auto" }}
+                  style={{ height: "184"}}
                   alt='Tolak NextJS Template'
+                  href='/home1'
                 />
               </a>
-              <p className='footer-widget--about-two__text'>{widgetText}</p>
-              <div className='footer-widget__social'>
+          
+              <div className='footer-widget__social' style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "15px", marginTop: "-100px" }}>
+
+
                 {widgetSocial.map(({ id, href, icon, title }) => (
                   <Link href={href} key={id}>
                     <FontAwesomeIcon icon={icon} />
@@ -78,36 +79,21 @@ const FooterThree = () => {
               </ul>
             </div>
           </Col>
-          <Col md={6} lg={3}>
-            <div className='footer-widget footer-widget--posts'>
-              <h2 className='footer-widget__title'>Recent Posts</h2>
-              <ul className='footer-widget__posts list-unstyled'>
-                {posts.posts.map(({ id, title, meta, image, href }) => (
-                  <li className='footer-widget__posts__item' key={id}>
-                    <div className='footer-widget__posts__image'>
-                      <Image src={image} alt='' />
-                    </div>
-                    <div className='footer-widget__posts__content'>
-                      <p className='footer-widget__posts__meta'>{meta}</p>
+          <Col md={3}lg={3}>
+          <h2 className='footer-widget__title'style={{ marginTop: "100px"}}>About Us </h2>
+          <p className='footer-widget--about-two__text' style={{ marginTop: "90px"}}> 
+  {widgetText}
+</p>
 
-                      <h4 className='footer-widget__posts__title'>
-                        <Link href={href}>{title}</Link>
-                      </h4>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </Col>
         </Row>
       </Container>
-      <div className='main-footer-three__bottom'>
+      <div className='main-footer-three__bottom' style={{ padding: "10px 0", margin: "0" }}>
         <Container>
           <Row>
             <Col md={6}>
-              <p className='main-footer-three__copyright'>
-                &copy; Copyright <span className='dynamic-year'>{year}</span> by Tolak
-                NextJS Template.
+              <p className="main-footer__copyright">
+                &copy; {year} Appxperts Enterprise Solutions. All Rights Reserved.
               </p>
             </Col>
             <Col md={6}>
@@ -127,3 +113,4 @@ const FooterThree = () => {
 };
 
 export default FooterThree;
+ 

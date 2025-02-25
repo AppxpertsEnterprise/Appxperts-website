@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 const { bg, tagLine, title, items } = testimonialsOnePageData
+import './Testimonial.css';
 
 const TestimonialsOnePage = () => {
     return (
@@ -35,9 +36,9 @@ const TestimonialsOnePage = () => {
                                         rating.map((c, i) => <i key={i} className={c}></i>)
                                     }
                                 </div>
-                                <div className="testimonials-card__image">
+                                {/* <div className="testimonials-card__image">
                                     <Image src={image} alt={name} />
-                                </div>
+                                </div> */}
                             </div>
                         </Col>)}
 

@@ -10,7 +10,7 @@ const aboutOneData = {
     videoId: "h9MbznbxlLc",
     tagLine: "Our About Now",
     title: "We Can Clients with the \n About Services",
-    text: "Business tailored it design, management & support services \n business agency elit, sed do eiusmod tempor.",
+    text: "Building Scalable and Secure Software Solutions , \n Smart Digital Products for Modern Businesses , From Idea to Execution: Software That Delivers",
     lists: ["IT Software Developmen", "Digital Marketing", "Branding.", "Manpower Outsourcing", "Media in this solution."
 
     ],

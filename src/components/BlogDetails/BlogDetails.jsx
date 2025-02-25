@@ -74,11 +74,14 @@ const BlogDetails = () => {
                     <Col lg={8}>
                         <div className="blog-details__content">
                             <div className="blog-details__image">
-                                <Image
-                                    src={image}
-                                    alt='tolak'
+                            <Image
+    src={image}
+    alt="tolak"
+    width={700}
+    height={500}//djust height as needed
+    style={{ objectFit: "cover" }} // Ensures images maintain aspect ratio
+/>
 
-                                />
                             </div>
                             <div className="blog-details__meta">
                                 <div className="blog-details__meta__cats">
@@ -141,7 +144,7 @@ const BlogDetails = () => {
                                 </div>
                             </blockquote>
                         </div>
-                        <div className="comments-one">
+                        {/* <div className="comments-one">
                             <h3 className="comments-one__title">
                                 Comments ({comments.length})
                             </h3>
@@ -170,7 +173,7 @@ const BlogDetails = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
 
                         <div className="comments-form">
                             <h3 className="comments-form__title">Leave a comment</h3>

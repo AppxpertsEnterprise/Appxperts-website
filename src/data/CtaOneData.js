@@ -17,8 +17,7 @@ const ctaOneData = {
     author3,
     icon: "icon-best-price",
     title: "Solution System Design",
-    text: "Every team has a culture and set of ct ations that have either been aed orsve naturally evolved.",
-    conText: "29,0000 customers with our services",
+    text: "At Appxperts, we engineer scalable, efficient, and user-centric software solutions. Our system design approach emphasizes innovation.",
     conLinkText: "( Let’s Started )",
     href: "contact"
 

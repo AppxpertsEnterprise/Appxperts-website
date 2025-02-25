@@ -9,19 +9,19 @@ const funFactOneData = {
   items: [
     {
       id: 1,
-      text: 'Professionals Trained Successfully',
+      text: 'Successful Professionals Trained',
       count: "63",
       identity: ""
     },
     {
       id: 2,
-      text: 'Completed Projects',
+      text: 'Projects Successfully Delivered',
       count: "26",
       identity: "funfact-one__item--two"
     },
     {
       id: 3,
-      text: 'Dedicated Customer Support',
+      text: 'Dedicated 24/7 Customer Support',
       count: "26",
       identity: "funfact-one__item--three"
     }
@@ -29,28 +29,28 @@ const funFactOneData = {
   accordionData: [
     {
       id: 1,
-      header: 'Why choose our software solutions?',
-      content: "We deliver innovative and scalable solutions tailored to your business needs, ensuring increased efficiency and growth opportunities."
+      header: 'Why Choose Appxperts for Software Solutions?',
+      content: "We provide cutting-edge, scalable, and tailor-made software solutions that enhance operational efficiency and drive business success."
     },
     {
       id: 2,
-      header: 'What industries do we serve?',
-      content: "Our solutions cater to a wide range of industries, including retail, healthcare, education, and enterprise-level businesses."
+      header: 'Which Industries Do We Serve?',
+      content: "Appxperts specializes in solutions for diverse industries, including retail, healthcare, education, finance, and enterprise-level businesses."
     },
     {
       id: 3,
-      header: 'How do we ensure project success?',
-      content: "By employing a result-driven approach, clear communication, and agile methodologies, we deliver projects on time and within scope."
+      header: 'How Do We Ensure Project Success?',
+      content: "We follow agile methodologies, maintain clear communication, and adopt a result-oriented approach to ensure projects are delivered on time and exceed expectations."
     },
     {
       id: 4,
-      header: 'What makes our customer support unique?',
-      content: "Our customer support team provides personalized assistance, ensuring your operations run smoothly and any issues are promptly resolved."
+      header: 'What Makes Our Customer Support Stand Out?',
+      content: "Our expert support team offers round-the-clock assistance, ensuring seamless operations and prompt resolution of any technical challenges."
     },
     {
       id: 5,
-      header: 'What technologies do we specialize in?',
-      content: "We specialize in cutting-edge technologies, including cloud computing, AI, machine learning, and web development frameworks."
+      header: 'What Technologies Do We Specialize In?',
+      content: "We excel in modern technologies, including cloud computing, AI, machine learning, full-stack web and mobile development, and enterprise software solutions."
     }
   ]
 };

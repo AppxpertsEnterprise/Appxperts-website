@@ -46,9 +46,9 @@ const CtaOne = ({ rtl, page }) => {
                                 <p className="cta-one__box__text">{text}</p>
                             </div>
                             <div className="cta-one__author">
-                                <Image src={author1} alt="tolak" />
+                                {/* <Image src={author1} alt="tolak" />
                                 <Image src={author2} alt="tolak" />
-                                <Image src={author3} alt="tolak" />
+                                <Image src={author3} alt="tolak" /> */}
                                 <Link className="cta-one__author__rm" href={href}>More <span className="fas fa-arrow-right"></span></Link>
                             </div>
                             <p className="cta-one__content__text">{conText} <Link href={href}>{conLinkText}</Link></p>

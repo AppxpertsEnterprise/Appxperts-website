@@ -47,13 +47,13 @@ const HeaderInner = () => {
               <span></span>
               <span></span>
             </div>
-            <Link
+            {/* <Link
               onClick={toggleSearch}
               href='#'
               className='search-toggler main-header-inner__search'
             >
               <i className='icon-magnifying-glass'></i>
-            </Link>
+            </Link> */}
             <Link href='contact' className='tolak-btn main-header-inner__btn'>
               <b>Discover More</b>
               <span></span>

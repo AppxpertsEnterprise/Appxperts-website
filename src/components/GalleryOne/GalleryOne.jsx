@@ -1,17 +1,20 @@
-// GalleryOne.js
 'use client'
-import React, { useState } from 'react';
-import { Container, Row, Col, Button, Modal } from 'react-bootstrap'; // Assuming you're using react-bootstrap
-import { galleryData } from '@/data/galleryData';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Form, InputGroup } from 'react-bootstrap';
 import Masonry from "react-masonry-component";
 import Image from 'next/image';
-import Link from 'next/link';
 import GalleryModal from '../GalleryModal/GalleryModal';
+import { galleryData } from '@/data/galleryData';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import styles from './galleryone.module.css';
 
 const GalleryOne = () => {
-
     const [currentIndex, setCurrentIndex] = useState(null);
     const [clickedImg, setClickedImg] = useState(null);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [displayedImages, setDisplayedImages] = useState(galleryData.slice(0, 9));
+    const [hasMore, setHasMore] = useState(true);
 
     const handleClick = (src, index) => {
         setCurrentIndex(index);
@@ -20,59 +23,72 @@ const GalleryOne = () => {
 
     const handelRotationRight = () => {
         const totalLength = galleryData.length;
-        if (currentIndex + 1 >= totalLength) {
-            setCurrentIndex(0);
-            const newUrl = galleryData[0].src;
-            setClickedImg(newUrl);
-            return;
-        }
-        const newIndex = currentIndex + 1;
-        const newUrl = galleryData.filter((item) => {
-            return galleryData.indexOf(item) === newIndex;
-        });
-        const newItem = newUrl[0].src;
-        setClickedImg(newItem);
-        setCurrentIndex(newIndex);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalLength);
+        setClickedImg(galleryData[(currentIndex + 1) % totalLength].src);
     };
 
     const handelRotationLeft = () => {
-
-
         const totalLength = galleryData.length;
-        if (currentIndex === 0) {
-            setCurrentIndex(totalLength - 1);
-            const newUrl = galleryData[totalLength - 1].src;
-            setClickedImg(newUrl);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + totalLength) % totalLength);
+        setClickedImg(galleryData[(currentIndex - 1 + totalLength) % totalLength].src);
+    };
+
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    const filteredImages = galleryData.filter(({ alt }) =>
+        alt.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    useEffect(() => {
+        setDisplayedImages(filteredImages.slice(0, displayedImages.length));
+    }, [searchTerm]);
+
+    const loadMoreImages = () => {
+        if (displayedImages.length >= filteredImages.length) {
+            setHasMore(false);
             return;
         }
-        const newIndex = currentIndex - 1;
-        const newUrl = galleryData.filter((item) => {
-            return galleryData.indexOf(item) === newIndex;
-        });
-        const newItem = newUrl[0].src;
-        setClickedImg(newItem);
-        setCurrentIndex(newIndex);
+        setDisplayedImages((prev) => [
+            ...prev,
+            ...filteredImages.slice(prev.length, prev.length + 9),
+        ]);
     };
 
     return (
-        <section className="gallery-one">
+        <section className={styles.galleryOne}>
             <Container fluid>
-                <Masonry className="row position-relative">
-                    {galleryData.map(({ id, src, alt, href, md, lg }, index) => (
-                        <Col key={id} md={md} lg={lg}>
-                            <div className="gallery-one__card">
-                                <Image src={src} alt={alt} layout="responsive" width={300} height={200} />
-                                <div className="gallery-one__card__hover">
-                                    <div onClick={() => handleClick(src, index)} className="img-popup">
-                                        <span className="gallery-one__card__icon"></span>
-                                    </div>
-                                </div>
+                <InputGroup className="mb-4">
+                    <Form.Control
+                        type="text"
+                        placeholder="Search images..."
+                        value={searchTerm}
+                        onChange={handleSearch}
+                    />
+                </InputGroup>
+                <Masonry className={`${styles.masonryLayout} row position-relative`}>
+                    {displayedImages.map(({ id, src, alt, md, lg }, index) => (
+                        <Col key={id} md={md} lg={lg} className={styles.galleryItem}>
+                            <div className={styles.galleryCard} onClick={() => handleClick(src, index)}>
+                                <Image
+                                    src={src}
+                                    alt={alt}
+                                    layout="intrinsic"
+                                    width={400}
+                                    height={300}
+                                    className={styles.trendingImage}
+                                />
                             </div>
                         </Col>
                     ))}
                 </Masonry>
+                {hasMore && (
+                    <div className="text-center mt-4">
+                        <button className="btn btn-primary" onClick={loadMoreImages}>Load More</button>
+                    </div>
+                )}
             </Container>
-            {/* Modal for Image Popup with Gallery Controls */}
             {clickedImg && (
                 <GalleryModal
                     clickedImg={clickedImg}
@@ -83,7 +99,6 @@ const GalleryOne = () => {
                     length={galleryData.length}
                 />
             )}
-
         </section>
     );
 };

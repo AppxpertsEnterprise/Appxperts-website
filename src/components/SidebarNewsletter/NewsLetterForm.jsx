@@ -80,14 +80,16 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
           : "sidebar-one__newsletter"
       } mc-form`}
     >
-      <input
-        type="email"
-        name="EMAIL"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email address"
-        disabled={isSubmitting}
-      />
+     <input
+  type="email"
+  name="EMAIL"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Email address"
+  disabled={isSubmitting}
+  style={{ width: "300px", padding: "10px" }} // Adjust width as needed
+/>
+
       <button
         onClick={submit}
         type="button"

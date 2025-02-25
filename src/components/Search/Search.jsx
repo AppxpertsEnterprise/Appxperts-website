@@ -30,7 +30,7 @@ const Search = () => {
         className='search-popup__overlay search-toggler'
       ></div>
 
-      <div className='search-popup__content'>
+      {/* <div className='search-popup__content'>
         <form onSubmit={handleSearch} className='search-popup__form' action='#'>
           <input type='text' id='search' placeholder='Search Here...' />
           <button
@@ -44,7 +44,7 @@ const Search = () => {
             <span></span>
           </button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

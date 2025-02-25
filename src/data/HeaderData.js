@@ -95,8 +95,8 @@ const navItems = [
   },
   {
     id: 2,
-    name: "Pages",
-    href: "#",
+    name: "Our Products",
+    href: "#product",
     subNavItems: [
       {
         id: 1,
@@ -124,38 +124,38 @@ const navItems = [
       // { id: 2, name: "Our Team", href: "/team" },
       // { id: 3, name: "Team Carousel", href: "/team-carousel" },
       // { id: 4, name: "Team Details", href: "/team-details" },
-      { id: 5, name: "Testimonial", href: "/reviews" },
+      
       // { id: 6, name: "Testimonial Carousel", href: "/reviews-carousel" },
       // { id: 7, name: "Pricing Page", href: "/packages" },
       // { id: 8, name: "Pricing Carousel", href: "/packages-carousel" },
-      {
-        id: 9,
-        name: "Clients",
-        href: "/gallery",
-        dropdown: false,
-        subItems: [
-          // {
-          //   id: 1,
-          //   name: "Gallery Masonry",
-          //   href: "/gallery",
-          // },
-          // {
-          //   id: 2,
-          //   name: "Gallery Filter",
-          //   href: "/gallery-filter",
-          // },
-          // {
-          //   id: 3,
-          //   name: "Gallery Grid",
-          //   href: "/gallery-grid",
-          // },
-          // {
-          //   id: 4,
-          //   name: "Gallery Carousel",
-          //   href: "/gallery-carousel",
-          // },
-        ],
-      },
+      // {
+      //   id: 9,
+      //   name: "Clients",
+      //   href: "/gallery",
+      //   dropdown: false,
+      //   subItems: [
+      //     // {
+      //     //   id: 1,
+      //     //   name: "Gallery Masonry",
+      //     //   href: "/gallery",
+      //     // },
+      //     // {
+      //     //   id: 2,
+      //     //   name: "Gallery Filter",
+      //     //   href: "/gallery-filter",
+      //     // },
+      //     // {
+      //     //   id: 3,
+      //     //   name: "Gallery Grid",
+      //     //   href: "/gallery-grid",
+      //     // },
+      //     // {
+      //     //   id: 4,
+      //     //   name: "Gallery Carousel",
+      //     //   href: "/gallery-carousel",
+      //     // },
+      //   ],
+      // },
       // { id: 10, name: "FAQs", href: "/faq" },
       // { id: 11, name: "Login", href: "/login" },
       // { id: 12, name: "404 Error", href: "/404" },
@@ -215,8 +215,8 @@ const navItems = [
   // },
   // {
   //   id: 5,
-  //   name: "News",
-  //   href: "#",
+  //   name: "Blog",
+  //   href: "",
   //   subNavItems: [
   //     {
   //       id: 1,
@@ -243,26 +243,26 @@ const navItems = [
   //     },
   //     {
   //       id: 2,
-  //       name: "News List",
-  //       href: "#",
+  //       name: "Blog",
+  //       href: "/blog-details",
   //       dropdown: true,
-  //       subItems: [
-  //         {
-  //           id: 1,
-  //           name: "No Sidebar",
-  //           href: "/blog-list",
-  //         },
-  //         {
-  //           id: 2,
-  //           name: "Left Sidebar",
-  //           href: "/blog-list-left",
-  //         },
-  //         {
-  //           id: 3,
-  //           name: "Right Sidebar",
-  //           href: "/blog-list-right",
-  //         },
-  //       ],
+  //       // subItems: [
+  //       //   {
+  //       //     id: 1,
+  //       //     name: "No Sidebar",
+  //       //     href: "/blog-list",
+  //       //   },
+  //       //   {
+  //       //     id: 2,
+  //       //     name: "Left Sidebar",
+  //       //     href: "/blog-list-left",
+  //       //   },
+  //       //   {
+  //       //     id: 3,
+  //       //     name: "Right Sidebar",
+  //       //     href: "/blog-list-right",
+  //       //   },
+  //       // ],
   //     },
   //     { id: 3, name: "News Carousel", href: "/blog-carousel" },
   //     {
@@ -291,10 +291,22 @@ const navItems = [
   //   ],
   // },
   {
-    id: 6,
+    id: 5,
+    name: "Blog",
+    href: "/blog-details",
+  },
+  { id: 6, name: "Testimonial", href: "/reviews" },
+  {
+    id: 9,
+    name: "Clients",
+    href: "/gallery",
+  },
+  {
+    id: 7,
     name: "Contact",
     href: "/contact",
   },
+
 ];
 
 const social = [

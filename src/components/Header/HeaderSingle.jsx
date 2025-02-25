@@ -60,14 +60,14 @@ const HeaderSingle = () => {
               <span></span>
               <span></span>
             </div>
-            <Link
+            {/* <Link
               href='#'
               onClick={toggleSearch}
               className='search-toggler main-header__search'
             >
               <i className='icon-magnifying-glass' aria-hidden='true'></i>
               <span className='sr-only'>Search</span>
-            </Link>
+            </Link> */}
             <a href='cart' className='main-header__cart'>
               <i className='icon-shopping-cart' aria-hidden='true'></i>
               <span className='sr-only'>Search</span>
