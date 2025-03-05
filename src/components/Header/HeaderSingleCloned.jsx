@@ -31,7 +31,7 @@ const HeaderSingleCloned = () => {
       <Container fluid>
         <div className='main-header__inner'>
           <div className='main-header__logo'>
-            <Link href='/home1'>
+            <Link href='/Appxperts'>
               <Image
                 src={main_logo}
                 alt='Tolak HTML'

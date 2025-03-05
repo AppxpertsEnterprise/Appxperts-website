@@ -18,7 +18,7 @@ const HeaderThreeSingleCloned = () => {
       <div className='container'>
         <div className='main-header-three__inner'>
           <div className='main-header-three__logo'>
-            <Link href='/home1'>
+            <Link href='/Appxperts'>
               <Image
                 src={main_logo}
                 alt='Tolak HTML'

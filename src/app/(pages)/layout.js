@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   const [themeState, setThemeState] = useState("light");
 
   useEffect(() => {
-    if (pathname === "/home1-dark" || pathname === "/home2-dark" || pathname === "/home3-dark" || pathname === "/home4-dark") {
+    if (pathname === "/Appxperts-dark" || pathname === "/home2-dark" || pathname === "/home3-dark" || pathname === "/home4-dark") {
       setThemeState("dark");
     } else {
       setThemeState("light");

@@ -39,7 +39,7 @@ const FooterThree = () => {
                   width={184}
                   style={{ height: "184"}}
                   alt='Tolak NextJS Template'
-                  href='/home1'
+                  href='/Appxperts'
                 />
               </a>
           

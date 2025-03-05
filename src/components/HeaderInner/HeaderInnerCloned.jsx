@@ -17,7 +17,7 @@ const HeaderInnerCloned = () => {
       <div className='container'>
         <div className='main-header-inner__inner'>
           <div className='main-header-inner__logo'>
-            <Link href='/home1'>
+            <Link href='/Appxperts'>
               <Image
                 src={logo_light}
                 alt='Tolak HTML'

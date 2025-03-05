@@ -17,7 +17,7 @@ const HeaderFourCloned = () => {
       <div className='container-fluid'>
         <div className='main-header-four__inner'>
           <div className='main-header-four__logo'>
-            <Link href='/home1'>
+            <Link href='/Appxperts'>
               <Image
                 src={main_logo}
                 alt='Tolak HTML'
