@@ -1,1 +1,36 @@
+<<<<<<< HEAD
 {}
+=======
+{
+  "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react": {
+    "id": "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\ClientCarousel\\ClientCarousel.jsx -> tiny-slider-react": {
+    "id": "components\\ClientCarousel\\ClientCarousel.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\MainSliderOne\\MainSliderOne.jsx -> tiny-slider-react": {
+    "id": "components\\MainSliderOne\\MainSliderOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\ProjectOne\\ProjectOne.jsx -> tiny-slider-react": {
+    "id": "components\\ProjectOne\\ProjectOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react": {
+    "id": "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  }
+}
+>>>>>>> b664ef06d7dab02c7dfb89ff7b482e35593226ea

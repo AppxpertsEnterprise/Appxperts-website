@@ -1,3 +1,20 @@
 {
+<<<<<<< HEAD
   "pages": {}
+=======
+  "pages": {
+    "/(pages)/home1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/home1/page.css",
+      "static/chunks/app/(pages)/home1/page.js"
+    ],
+    "/(pages)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/layout.css",
+      "static/chunks/app/(pages)/layout.js"
+    ]
+  }
+>>>>>>> b664ef06d7dab02c7dfb89ff7b482e35593226ea
 }
