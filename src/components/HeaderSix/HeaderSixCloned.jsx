@@ -17,7 +17,7 @@ const HeaderSixCloned = () => {
             <Container >
                 <div className="main-header-six__inner">
                     <div className="main-header-six__logo">
-                        <Link href='/Appxperts'>
+                        <Link href='/home1'>
                             <Image
                                 src={logo5}
                                 alt='Tolak HTML'

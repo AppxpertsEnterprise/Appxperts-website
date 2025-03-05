@@ -34,7 +34,7 @@ const HeaderSingle = () => {
       <Container fluid>
         <div className='main-header__inner'>
           <div className='main-header__logo'>
-            <Link href='/Appxperts'>
+            <Link href='/home1'>
               <Image
                 src={main_logo}
                 alt='Tolak HTML'

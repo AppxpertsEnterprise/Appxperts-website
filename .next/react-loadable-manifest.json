@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+{}
+=======
 {
   "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react": {
     "id": "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react",
@@ -30,3 +33,4 @@
     ]
   }
 }
+>>>>>>> b664ef06d7dab02c7dfb89ff7b482e35593226ea

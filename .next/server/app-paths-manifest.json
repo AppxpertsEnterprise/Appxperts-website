@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+{}
+=======
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(pages)/Appxperts/page": "app/(pages)/Appxperts/page.js"
+  "/(pages)/home1/page": "app/(pages)/home1/page.js"
 }
+>>>>>>> b664ef06d7dab02c7dfb89ff7b482e35593226ea

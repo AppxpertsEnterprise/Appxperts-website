@@ -16,11 +16,11 @@ const megamenuData = {
 
             title: "Home Page 01",
             image: homeOne,
-            href: "/Appxperts",
+            href: "/home1",
             btns: [
-                { id: 1, name: "Multi Page", href: "/Appxperts" },
-                { id: 2, name: "One Page", href: "Appxperts-one" },
-                { id: 3, name: "Dark Page", href: "Appxperts-dark" }
+                { id: 1, name: "Multi Page", href: "/home1" },
+                { id: 2, name: "One Page", href: "home1-one" },
+                { id: 3, name: "Dark Page", href: "home1-dark" }
             ]
 
         },

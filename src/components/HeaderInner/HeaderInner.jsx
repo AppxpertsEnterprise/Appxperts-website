@@ -18,7 +18,7 @@ const HeaderInner = () => {
       <div className='container'>
         <div className='main-header-inner__inner'>
           <div className='main-header-inner__logo'>
-            <Link href='/Appxperts'>
+            <Link href='/home1'>
               <Image
                 src={logo_light}
                 alt='Tolak HTML'
