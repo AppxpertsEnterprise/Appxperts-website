@@ -90,16 +90,17 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
   style={{ width: "300px", padding: "10px" }} // Adjust width as needed
 />
 
-      <button
-        onClick={submit}
-        type="button"
-        className="tolak-btn"
-        disabled={isSubmitting}
-      >
-        <b>{isSubmitting ? "Subscribing..." : "Subscribe"}</b>
-        <span></span>
-        <span className="sr-only">Subscribe</span>
-      </button>
+<button
+  onClick={submit}
+  type="button"
+  className="tolak-btn px-3 py-1 text-sm h-10 border-5px"
+  disabled={isSubmitting}
+>
+  <b>{isSubmitting ? "Subscribing..." : "Subscribe"}</b>
+  <span></span>
+  <span className="sr-only">Subscribe</span>
+</button>
+
 
       <div className="mc-form__response">
         {isSubmitting && <div>Sending...</div>}
