@@ -23,8 +23,27 @@
       "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
     ]
   },
+  "components\\ServiceTwo\\ServiceTwo.jsx -> tiny-slider-react": {
+    "id": "components\\ServiceTwo\\ServiceTwo.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
   "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react": {
     "id": "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> @/components/Jarallax/Jarallax": {
+    "id": "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> @/components/Jarallax/Jarallax",
+    "files": [
+      "static/css/_app-pages-browser_src_components_Jarallax_Jarallax_js.css",
+      "static/chunks/_app-pages-browser_src_components_Jarallax_Jarallax_js.js"
+    ]
+  },
+  "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> tiny-slider-react": {
+    "id": "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> tiny-slider-react",
     "files": [
       "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
     ]
