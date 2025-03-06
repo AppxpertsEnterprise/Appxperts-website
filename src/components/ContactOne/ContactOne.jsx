@@ -35,7 +35,7 @@ const ContactOne = ({ rtl }) => {
     }
   
     try {
-      const response = await fetch('https://appxperts.onrender.com/contact', {
+      const response = await fetch('https://emailapi.appxes-erp.in/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
