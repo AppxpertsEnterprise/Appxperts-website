@@ -109,7 +109,7 @@ const ContactTwo = ({ contact }) => {
                   </h5>
                   <div className="contact-two__info__social__wrap">
                     {socials.map(({ id, link, icon, name }) => (
-                      <Link key={id} href={link}>
+                      <Link key={id} href={link} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={icon} />
                         <span className="sr-only">{name}</span>
                       </Link>

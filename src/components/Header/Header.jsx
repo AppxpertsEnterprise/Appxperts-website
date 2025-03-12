@@ -54,7 +54,7 @@ const Header = ({ dark, rtl }) => {
       className={`main-header sticky-header sticky-header--normal ${
         scrollToTop ? "active" : ""
       }`}
-    >
+    > 
       <Container fluid>
         <div className="main-header__inner">
           {/* Logo Section */}
@@ -113,7 +113,12 @@ const Header = ({ dark, rtl }) => {
               <span></span>
               <span></span>
             </button>
+              <Link href="/packages" className="tolak-btn main-header__btn" style={{marginTop:"40px"}}>
+                          <b>Discover More</b>
+                          <span></span>
+                        </Link>
           </div>
+
         </div>
       </Container>
     </header>

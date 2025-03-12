@@ -146,7 +146,7 @@ const navItems = [
     name: "Contact",
     href: "/contact",
   },
-  {
+ /*  {
     id:7,
     
     name :"Discover More",
@@ -154,7 +154,7 @@ const navItems = [
     
      
     
-  }
+  } */
 ];
 
 

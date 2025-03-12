@@ -48,7 +48,7 @@ const FooterTwo = ({ pageTitle }) => {
               <p className='footer-widget--about-two__text'>{widgetText}</p>
               <div className='footer-widget__social'>
                 {widgetSocial.map(({ id, href, icon, title }) => (
-                  <Link href={href} key={id}>
+                  <Link href={href} key={id} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={icon} />
                     <span className='sr-only'>{title}</span>
                   </Link>

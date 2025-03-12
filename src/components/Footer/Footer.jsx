@@ -49,7 +49,7 @@ const Footer = () => {
                             </ul>
                             <div className="footer-widget__social">
                                 {widgetSocial.map(({ id, href, icon, title }) => (
-                                    <Link href={href} key={id} className="social-icon">
+                                    <Link href={href} target="_blank" rel="noopener noreferrer" key={id} className="social-icon">
                                         <FontAwesomeIcon icon={icon} />
                                         <span className="sr-only">{title}</span>
                                     </Link>

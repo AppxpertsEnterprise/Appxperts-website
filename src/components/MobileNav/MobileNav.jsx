@@ -47,7 +47,7 @@ const MobileNav = () => {
                 <div className="mobile-nav__social">
                     {social.map(({ icon, link }, index) => (
 
-                        <Link key={index} href={link}>
+                        <Link key={index} href={link} target="_blank" rel="noopener noreferrer" >
                             < FontAwesomeIcon icon={icon} />
                             <span className="sr-only">Facebook</span>
                         </Link>

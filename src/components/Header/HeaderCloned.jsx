@@ -24,7 +24,7 @@ const HeaderCloned = ({ dark, rtl }) => {
   if (!mounted) {
     return null;
   }
-
+ 
   return (
     <header className={`main-header sticky-header sticky-header--normal sticky-header--cloned ${scrollToTop ? "active" : ""}`}>
       <Container fluid>

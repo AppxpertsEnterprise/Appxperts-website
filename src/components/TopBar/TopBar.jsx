@@ -15,7 +15,7 @@ const TopBar = () => {
                     {icons.map(({ id, icon, content, subHref, href }) => (
                         <li key={id} style={{ display: 'flex', alignItems: 'center' }}>
                             <FontAwesomeIcon icon={icon} style={{ marginRight: '5px', color: '#ffffff' }} />
-                            <Link href={subHref ? `${subHref}:${content}` : href} style={{ textDecoration: 'none', color: '#ffffff' }}>
+                            <Link href={subHref ? `${subHref}:${content}` : href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#ffffff' }}>
                                 {content}
                             </Link>
                         </li>
