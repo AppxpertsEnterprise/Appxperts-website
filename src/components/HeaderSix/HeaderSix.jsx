@@ -18,11 +18,7 @@ const HeaderSix = () => {
             <Container >
                 <div className="main-header-six__inner">
                     <div className="main-header-six__logo">
-<<<<<<< HEAD
                         <Link href='/Appxperts'>
-=======
-                        <Link href='/home1'>
->>>>>>> 7232698 (first commit)
                             <Image
                                 src={logo5}
                                 alt='Tolak HTML'

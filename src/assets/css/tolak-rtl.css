@@ -4339,21 +4339,14 @@ h6 {
   }
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 7232698 (first commit)
 .topbar-one::after {
   position: absolute;
   left: 0 !important;
   top: 0;
   content: "";
-<<<<<<< HEAD
   /* width: 16.4%; */
-=======
-  width: 16.4%;
->>>>>>> 7232698 (first commit)
   height: 100%;
   background-color: var(--tolak-white, #fff);
 }
@@ -4643,11 +4636,7 @@ h6 {
 .main-header::after {
   position: absolute;
   right: 0;
-<<<<<<< HEAD
   bottom: 0;
-=======
-  bottom: -46px;
->>>>>>> 7232698 (first commit)
   content: "";
   width: 16.4%;
   height: 46px;

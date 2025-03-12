@@ -18,11 +18,7 @@ const HeaderThreeSingle = () => {
       <div className='container'>
         <div className='main-header-three__inner'>
           <div className='main-header-three__logo'>
-<<<<<<< HEAD
             <Link href='/Appxperts'>
-=======
-            <Link href='/home1'>
->>>>>>> 7232698 (first commit)
               <Image
                 src={main_logo}
                 alt='Tolak HTML'
