@@ -136,7 +136,7 @@ const BlogDetails = () => {
                                     </h5>
                                     <div className="blog-details__blockquote__meta__social">
                                         {blockquoteAuthor.social.map((link, index) => (
-                                            <Link key={index} href={link.href}>
+                                            <Link key={index} href={link.href} target="_blank" rel="noopener noreferrer">
                                                 <i className={link.icon} aria-hidden="true"></i>
                                                 <span className="sr-only">{link.name}</span>
                                             </Link>

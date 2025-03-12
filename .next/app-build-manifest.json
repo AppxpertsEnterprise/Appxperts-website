@@ -12,26 +12,10 @@
       "static/css/app/(pages)/layout.css",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/home5-one/page": [
+    "/(pages)/blog-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/home5-one/page.css",
-      "static/chunks/app/(pages)/home5-one/page.js"
-    ],
-    "/(pages)/packages/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/packages/page.js"
-    ],
-    "/(pages)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/(pages)/blog-details/page.js"
     ]
   }
 }
