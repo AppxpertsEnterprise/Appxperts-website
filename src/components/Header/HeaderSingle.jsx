@@ -25,7 +25,7 @@ const HeaderSingle = () => {
   if (!mounted) {
     return null;
   }
-
+ 
   return (
     <header
       className={`main-header sticky-header sticky-header--one-page ${
