@@ -17,7 +17,7 @@ const page = () => {
         <Layout>
             <HeaderInner />
             <HeaderInnerCloned />
-            <PageHeader title="Marketing Business" subTitle="Service Details" />
+            <PageHeader title="Ecommerce Website" subTitle="Service Details" />
             <ServiceDetails />
             <MailTwo />
             <FooterThree />

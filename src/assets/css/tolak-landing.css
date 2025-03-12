@@ -251,7 +251,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--tolak-font, "Rubik", sans-serif);
-  color: var(--tolak-text, #636363);
+  color: #ffffff;
   font-size: 15px;
   line-height: 1.75;
   font-weight: 400;

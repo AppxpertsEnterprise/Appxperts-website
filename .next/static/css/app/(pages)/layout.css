@@ -2861,7 +2861,7 @@ body.dark {
 --------------------------------------------------------------*/
 body {
   font-family: var(--tolak-font, "Rubik", sans-serif);
-  color: var(--tolak-text, #636363);
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.75;
   font-weight: 400;
@@ -6015,7 +6015,7 @@ h6 {
 
 .footer-widget__title {
   font-size: 22px;
-  color: var(--tolak-white, #fff);
+  color:  #ffffff;
   text-transform: capitalize;
   margin: 0;
   margin-bottom: 36px;
@@ -31119,7 +31119,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
 
 .main-footer-four .footer-widget--posts .footer-widget__title {
-  color: var(--tolak-black, #051d1f);
+  color: #ffffff;
 }
 
 .main-footer-four .footer-widget--posts .footer-widget__posts__image {

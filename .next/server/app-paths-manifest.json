@@ -1,4 +1,9 @@
 {
-  "/(pages)/Appxperts/page": "app/(pages)/Appxperts/page.js",
-  "/(pages)/blog-details/page": "app/(pages)/blog-details/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(pages)/technology-services/page": "app/(pages)/technology-services/page.js",
+  "/(pages)/business-solution/page": "app/(pages)/business-solution/page.js",
+  "/(pages)/marketing-solution/page": "app/(pages)/marketing-solution/page.js",
+  "/(pages)/business-marketing/page": "app/(pages)/business-marketing/page.js",
+  "/(pages)/business-support/page": "app/(pages)/business-support/page.js"
 }

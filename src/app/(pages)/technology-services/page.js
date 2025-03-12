@@ -19,7 +19,7 @@ const page = () => {
         <Layout>
             <HeaderInner />
             <HeaderInnerCloned />
-            <PageHeader title="Ecommerce Website" subTitle="Service Details" />
+            <PageHeader title="Graphic Designing" subTitle="Service Details" />
             <ServiceDetails />
             <MailTwo />
             <FooterThree />
