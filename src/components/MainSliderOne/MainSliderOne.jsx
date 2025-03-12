@@ -124,8 +124,8 @@ const MainSliderOne = () => {
                     </Col>
                   </Row>
                 </Container>
-
-                <div className="main-slider-one__floating-text">Tolak</div>
+{/* 
+                <div className="main-slider-one__floating-text">AX</div> */}
               </div>
             </div>
           ))}
