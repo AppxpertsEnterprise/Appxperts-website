@@ -27,7 +27,11 @@ const HeaderTwoSingleCloned = () => {
                     <div className="main-header-two__inner__bg-one"></div>
                     <div className="main-header-two__inner__bg-two" style={{ backgroundImage: `url(${bg.src})` }}></div>
                     <div className="main-header-two__logo">
+<<<<<<< HEAD
+                        <Link href='/Appxperts'>
+=======
                         <Link href='/home1'>
+>>>>>>> 7232698 (first commit)
                             <Image
                                 src={logo_light}
                                 alt='Tolak HTML'

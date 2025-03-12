@@ -35,15 +35,17 @@ const TestimonialsOnePage = () => {
                                         rating.map((c, i) => <i key={i} className={c}></i>)
                                     }
                                 </div>
-                                <div className="testimonials-card__image">
+                                {/* <div className="testimonials-card__image">
                                     <Image src={image} alt={name} />
-                                </div>
+                                </div> */}
+
                             </div>
                         </Col>)}
 
                 </Row>
             </Container>
         </section >
+        
     );
 };
 

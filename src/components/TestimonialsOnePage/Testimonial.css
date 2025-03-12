@@ -1,0 +1,105 @@
+/* Enhanced Testimonials Page Styling */
+.testimonials-one {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #bbdefb, #ffffff);
+}
+
+.sec-title-two {
+    margin-bottom: 50px;
+}
+
+.sec-title-two__tagline {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0277bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sec-title-two__title {
+    font-size: 35px;
+    font-weight: 800;
+    color: #01579b;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.testimonials-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(2, 119, 189, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-left: 4px solid #0277bd;
+    max-width: 300px;
+    margin: auto;
+}
+
+.testimonials-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(2, 119, 189, 0.3);
+}
+
+.testimonials-card__bg-hover svg {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120px;
+    opacity: 0.05;
+}
+
+.testimonials-card__quote {
+    font-size: 35px;
+    color: #0277bd;
+    margin-bottom: 15px;
+}
+
+.testimonials-card__content {
+    font-size: 16px;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.testimonials-card__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #01579b;
+    margin-bottom: 6px;
+}
+
+.testimonials-card__designation {
+    font-size: 14px;
+    color: #0277bd;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.testimonials-card__rating {
+    color: #ffb300;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .testimonials-one {
+        padding: 50px 15px;
+    }
+    .testimonials-card {
+        padding: 20px;
+        max-width: 280px;
+    }
+    .sec-title-two__title {
+        font-size: 28px;
+    }
+}

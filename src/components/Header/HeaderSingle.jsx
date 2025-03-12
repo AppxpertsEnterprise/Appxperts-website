@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 import { useRootContext } from "@/Provider/context";
-
 import useScroll from "@/hooks/useScroll";
 import SingleNavItems from "../NavItems/SingleNavItems";
 import { useRouter } from "next/navigation";
@@ -20,63 +19,67 @@ const HeaderSingle = () => {
   useEffect(() => {
     setMounted(true);
   }, []);
+
   const { toggleSearch, handleToggle, toggleSidebar } = useRootContext();
 
   if (!mounted) {
     return null;
   }
+
   return (
     <header
-      className={`main-header sticky-header sticky-header--one-page  ${
-        scrollTop ? "active " : ""
+      className={`main-header sticky-header sticky-header--one-page ${
+        scrollTop ? "active" : ""
       }`}
     >
       <Container fluid>
-        <div className='main-header__inner'>
-          <div className='main-header__logo'>
-            <Link href='/home1'>
+        <div className="main-header__inner">
+          <div className="main-header__logo">
+            {/* Choose the correct homepage link */}
+            <Link href="/Appxperts">
               <Image
                 src={main_logo}
-                alt='Tolak HTML'
+                alt="Tolak HTML"
                 width={184}
                 style={{ height: "auto" }}
               />
             </Link>
           </div>
 
-          <nav className='main-header__nav main-menu'>
-            <ul className='main-menu__list one-page-scroll-menu'>
+          <nav className="main-header__nav main-menu">
+            <ul className="main-menu__list one-page-scroll-menu">
               {singleNavItems.map((item, index) => (
                 <SingleNavItems key={index} item={item} />
               ))}
             </ul>
           </nav>
-          <div className='main-header__right'>
+
+          <div className="main-header__right">
             <div
               onClick={handleToggle}
-              className='mobile-nav__btn mobile-nav__toggler'
+              className="mobile-nav__btn mobile-nav__toggler"
             >
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <Link
-              href='#'
+
+            {/* Uncomment this if search functionality is needed */}
+            {/* <Link
+              href="#"
               onClick={toggleSearch}
-              className='search-toggler main-header__search'
+              className="search-toggler main-header__search"
             >
-              <i className='icon-magnifying-glass' aria-hidden='true'></i>
-              <span className='sr-only'>Search</span>
-            </Link>
-            <a href='cart' className='main-header__cart'>
-              <i className='icon-shopping-cart' aria-hidden='true'></i>
-              <span className='sr-only'>Search</span>
+              <i className="icon-magnifying-glass" aria-hidden="true"></i>
+              <span className="sr-only">Search</span>
+            </Link> */}
+
+            <a href="cart" className="main-header__cart">
+              <i className="icon-shopping-cart" aria-hidden="true"></i>
+              <span className="sr-only">Cart</span>
             </a>
-            <Link
-              href='#'
-              className='main-header__toggler'
-              onClick={toggleSidebar}
-            >
+
+            <Link href="#" className="main-header__toggler" onClick={toggleSidebar}>
               <span></span>
               <span></span>
               <span></span>
@@ -87,7 +90,9 @@ const HeaderSingle = () => {
               <span></span>
               <span></span>
             </Link>
-            <Link href='contact' className='tolak-btn main-header__btn'>
+
+            {/* Updated the button to navigate to the Price page */}
+            <Link href="/packages" className="tolak-btn main-header__btn">
               <b>Discover More</b>
               <span></span>
             </Link>

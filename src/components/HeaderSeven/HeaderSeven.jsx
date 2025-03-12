@@ -19,7 +19,11 @@ const HeaderSeven = () => {
             <Container >
                 <div className="main-header-seven__inner">
                     <div className="main-header-seven__logo">
+<<<<<<< HEAD
+                        <Link href='/Appxperts'>
+=======
                         <Link href='/home1'>
+>>>>>>> 7232698 (first commit)
                             <Image
                                 src={logo6}
                                 alt='Tolak HTML'

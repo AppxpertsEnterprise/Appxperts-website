@@ -3,13 +3,16 @@ import mailTwoData from "@/data/MailTwoData";
 import React from "react";
 import SidebarNewsletter from "../SidebarNewsletter/SidebarNewsletter";
 import { Col, Container, Row } from "react-bootstrap";
+
 const { bg, icon, title, titleFive } = mailTwoData;
+
 const MailTwo = ({ pageTitle }) => {
   return (
     <section
       className={`mail-section-two ${
         pageTitle === "homeFive" ? "mail-section-two--home-five" : ""
       }`}
+      style={{ paddingBottom: "70px", marginBottom: "70px" }} // Added space for footer
     >
       <Container>
         <div className='mail-section-two__wrapper'>

@@ -18,7 +18,9 @@ const HeaderInner = () => {
       <div className='container'>
         <div className='main-header-inner__inner'>
           <div className='main-header-inner__logo'>
-            <Link href='/home1'>
+
+            <Link href='/Appxperts'>
+
               <Image
                 src={logo_light}
                 alt='Tolak HTML'
@@ -47,14 +49,18 @@ const HeaderInner = () => {
               <span></span>
               <span></span>
             </div>
-            <Link
+
+            {/* <Link
+
               onClick={toggleSearch}
               href='#'
               className='search-toggler main-header-inner__search'
             >
               <i className='icon-magnifying-glass'></i>
-            </Link>
-            <Link href='contact' className='tolak-btn main-header-inner__btn'>
+
+            </Link> */}
+
+            <Link href='/packages' className='tolak-btn main-header-inner__btn'>
               <b>Discover More</b>
               <span></span>
             </Link>

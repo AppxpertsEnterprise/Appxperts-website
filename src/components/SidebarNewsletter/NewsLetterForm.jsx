@@ -80,24 +80,24 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
           : "sidebar-one__newsletter"
       } mc-form`}
     >
-      <input
-        type="email"
-        name="EMAIL"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email address"
-        disabled={isSubmitting}
-      />
-      <button
-        onClick={submit}
-        type="button"
-        className="tolak-btn"
-        disabled={isSubmitting}
-      >
-        <b>{isSubmitting ? "Subscribing..." : "Subscribe"}</b>
-        <span></span>
-        <span className="sr-only">Subscribe</span>
-      </button>
+
+     <input
+  type="email"
+  name="EMAIL"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Email address"
+  disabled={isSubmitting}
+  style={{ width: "300px", padding: "10px" }} // Adjust width as needed
+/>
+
+<button type="button" className="tolak-btn">
+  <b>Subscribe</b>
+  <span style={{ top: "295.76px", left: "-154.781px" }}></span>
+  <span className="sr-only">Subscribe</span>
+</button>
+
+
 
       <div className="mc-form__response">
         {isSubmitting && <div>Sending...</div>}

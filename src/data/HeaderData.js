@@ -12,11 +12,12 @@ import {
   faInstagram,
   faFacebookF,
   faWhatsapp,
-  faPinterestP,
+ 
+ faPinterestP,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-
+  faPhone,
   faMapMarkerAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
@@ -95,213 +96,75 @@ const navItems = [
   },
   {
     id: 2,
-    name: "Pages",
-    href: "#",
+    name: "Our Products & Services",
+    href: "#product",
     subNavItems: [
       {
-        id: 1,
+        id: 3,
         name: "Our Products",
         href: "/project",
         dropdown: false,
         subItems: [
-          {
-            id: 1,
-            name: "Products Page",
-            href: "/project",
-          },
-          // {
-          //   id: 2,
-          //   name: "Project Carousel",
-          //   href: "/project-carousel",
-          // },
-          {
-            id: 3,
-            name: "Product Details",
-            href: "/project-details",
-          },
+          { id: 4, name: "Products Page", href: "/project" },
+          { id: 5, name: "Product Details", href: "/project-details" },
         ],
       },
-      // { id: 2, name: "Our Team", href: "/team" },
-      // { id: 3, name: "Team Carousel", href: "/team-carousel" },
-      // { id: 4, name: "Team Details", href: "/team-details" },
-      { id: 5, name: "Testimonial", href: "/reviews" },
-      // { id: 6, name: "Testimonial Carousel", href: "/reviews-carousel" },
-      // { id: 7, name: "Pricing Page", href: "/packages" },
-      // { id: 8, name: "Pricing Carousel", href: "/packages-carousel" },
       {
-        id: 9,
-        name: "Clients",
-        href: "/gallery",
-        dropdown: false,
+        id: 6,
+        name: "Services",
+        href: "#services",
+        dropdown: true,
         subItems: [
-          // {
-          //   id: 1,
-          //   name: "Gallery Masonry",
-          //   href: "/gallery",
-          // },
-          // {
-          //   id: 2,
-          //   name: "Gallery Filter",
-          //   href: "/gallery-filter",
-          // },
-          // {
-          //   id: 3,
-          //   name: "Gallery Grid",
-          //   href: "/gallery-grid",
-          // },
-          // {
-          //   id: 4,
-          //   name: "Gallery Carousel",
-          //   href: "/gallery-carousel",
-          // },
+          { id: 7, name: "Website Design and Development", href: "/business-growth" },
+          { id: 8, name: "ERP Software Development", href: "/business-solution" },
+          { id: 9, name: "Mobile Applications Development", href: "/marketing-solution" },
+          { id: 10, name: "Graphic Designing", href: "/technology-services" },
+          { id: 11, name: "Ecommerce Website", href: "/business-marketing" },
+          { id: 12, name: "Digital Marketing", href: "/business-support" },
         ],
       },
-      // { id: 10, name: "FAQs", href: "/faq" },
-      // { id: 11, name: "Login", href: "/login" },
-      // { id: 12, name: "404 Error", href: "/404" },
     ],
+  },
+ 
+  // {
+  //   id: 4,
+  //   name: "Testimonial",
+  //   href: "/reviews",
+  // },
+  {
+    id: 5,
+    name: "Clients",
+    href: "/gallery",
   },
   {
     id: 3,
-    name: "Services",
-    href: "#",
-    subNavItems: [
-      { id: 1, name: "Services", href: "/services" },
-      // { id: 2, name: "Services One Carousel", href: "/services-carousel" },
-      // { id: 3, name: "Services Two", href: "/services-two" },
-      // { id: 4, name: "Services Two Carousel", href: "/services-two-carousel" },   
-      { id: 5, name: "Website Design and Development", href: "/business-growth" },
-      { id: 6, name: "ERP Software Development", href: "/business-solution" },
-      { id: 7, name: "Mobile Applications Development", href: "/marketing-solution" },
-      { id: 8, name: "Graphic Designing", href: "/technology-services" },
-      { id: 9, name: "Ecommerce Website", href: "/business-marketing" },
-      { id: 10, name: "Digital Marketing", href: "/business-support" },
-    ],
+    name: "Blog",
+    href: "/blog-details",
   },
-
-  // {
-  //   id: 4,
-  //   name: "Shop",
-  //   href: "#",
-  //   subNavItems: [
-  //     {
-  //       id: 1,
-  //       name: "Products",
-  //       href: "#",
-  //       dropdown: true,
-  //       subItems: [
-  //         {
-  //           id: 1,
-  //           name: "No Sidebar",
-  //           href: "/products",
-  //         },
-  //         {
-  //           id: 2,
-  //           name: "Left Sidebar",
-  //           href: "/products-left",
-  //         },
-  //         {
-  //           id: 3,
-  //           name: "Right Sidebar",
-  //           href: "/products-right",
-  //         },
-  //       ],
-  //     },
-  //     { id: 2, name: "Products Carousel", href: "/products-carousel" },
-  //     { id: 3, name: "Product Details", href: "/product-details" },
-  //     { id: 4, name: "Cart", href: "/cart" },
-  //     { id: 5, name: "Checkout", href: "/checkout" },
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   name: "News",
-  //   href: "#",
-  //   subNavItems: [
-  //     {
-  //       id: 1,
-  //       name: "News Grid",
-  //       href: "#",
-  //       dropdown: true,
-  //       subItems: [
-  //         {
-  //           id: 1,
-  //           name: "No Sidebar",
-  //           href: "/blog-grid",
-  //         },
-  //         {
-  //           id: 2,
-  //           name: "Left Sidebar",
-  //           href: "/blog-grid-left",
-  //         },
-  //         {
-  //           id: 3,
-  //           name: "Right Sidebar",
-  //           href: "/blog-grid-right",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "News List",
-  //       href: "#",
-  //       dropdown: true,
-  //       subItems: [
-  //         {
-  //           id: 1,
-  //           name: "No Sidebar",
-  //           href: "/blog-list",
-  //         },
-  //         {
-  //           id: 2,
-  //           name: "Left Sidebar",
-  //           href: "/blog-list-left",
-  //         },
-  //         {
-  //           id: 3,
-  //           name: "Right Sidebar",
-  //           href: "/blog-list-right",
-  //         },
-  //       ],
-  //     },
-  //     { id: 3, name: "News Carousel", href: "/blog-carousel" },
-  //     {
-  //       id: 4,
-  //       name: "News Details",
-  //       href: "#",
-  //       dropdown: true,
-  //       subItems: [
-  //         {
-  //           id: 1,
-  //           name: "No Sidebar",
-  //           href: "/blog-details",
-  //         },
-  //         {
-  //           id: 2,
-  //           name: "Left Sidebar",
-  //           href: "/blog-details-left",
-  //         },
-  //         {
-  //           id: 3,
-  //           name: "Right Sidebar",
-  //           href: "/blog-details-right",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
   {
     id: 6,
     name: "Contact",
     href: "/contact",
   },
+  {
+    id:7,
+    
+    name :"Discover More",
+     href:   "/packages",
+    
+     
+    
+  }
 ];
 
+
 const social = [
-  { id: 1, icon: faInstagram, link: "https://instagram.com/appxperts.solution", name: "Instagram" },
-            { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
-            { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
+  { id: 1, icon: faInstagram, link: "https://instagram.com/appxperts.solution", name: "Instagram", target: "_blank" },
+  { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp", target: "_blank" },
+  { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook", target: "_blank" },
 ];
+
+
 const topbarTwoCarousel = [
   {
     id: 1,
@@ -349,6 +212,8 @@ const topbarFiveData = {
 
 }
 
+
+
 const headerData = {
   bg,
   topbarTwoCarousel,
@@ -356,18 +221,18 @@ const headerData = {
   logo3,
   logo5,
   logo6,
-  icons: [
+ icons: [
     {
       id: 1,
       icon: faEnvelope,
-      content: "info@appxes.com",
-      subHref: "mailto",
+      content: "info@appxperts.com", // Updated email
+      subHref: "mailto:info@appxperts.com",
     },
     {
       id: 2,
       icon: faMapMarkerAlt,
       content: "INDIA",
-      href: "https://www.google.com/maps/place/AppXperts+Enterprise+Solutions/@12.9098612,80.1933659,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525dc6fe289d87:0xe5705929217f530d!8m2!3d12.9098612!4d80.1959408!16s%2Fg%2F11t99ll0w6?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://www.google.com/maps/place/AppXperts+Enterprise+Solutions/@12.9098612,80.1933659,17z/",
     },
     {
       id: 3,
@@ -376,12 +241,19 @@ const headerData = {
       href: "https://www.google.com/maps",
     },
     {
-      id: 3,
+      id: 4,
       icon: faMapMarkerAlt,
       content: "DUBAI",
       href: "https://www.google.com/maps",
     },
+    {
+      id: 5,
+      icon: faPhone,  
+      content: "Call", // Updated call content
+      href: "tel:+918825528905",  
+    },
   ],
+
 
   sidebarOneIcons: [
     {
@@ -439,5 +311,6 @@ const headerData = {
   singleNavItemsSeven,
   topbarFiveData
 };
+
 
 export default headerData;

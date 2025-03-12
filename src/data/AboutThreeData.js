@@ -24,7 +24,9 @@ const aboutThreeData = {
   skillTitle: "Solution Business",
   skillText: "Level is high",
   contQuote:
-    "If you are accused of committing a crime, you will the very best criminal defense attorneys.",
+
+    "Where innovation meets excellence—Appxperts transforms your vision into success.",
+
   videoId: "6qys-562kp4", // Updated with new video ID
   authorText: "Founder",
 };

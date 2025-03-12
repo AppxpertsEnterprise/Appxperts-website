@@ -1,4 +1,4 @@
-// File: C:\Users\DELL\Downloads\Appxperts Website V3\Appxperts Website V3\src\app\(pages)\layout.js
+// File: C:\Users\DELL\Appxperts-website\src\app\(pages)\layout.js
 import * as entry from '../../../../src/app/(pages)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
