@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/(pages)/Appxperts/page": [
+    "/(pages)/business-growth/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/Appxperts/page.css",
-      "static/chunks/app/(pages)/Appxperts/page.js"
+      "static/chunks/app/(pages)/business-growth/page.js"
     ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
@@ -12,60 +11,16 @@
       "static/css/app/(pages)/layout.css",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/blog-details/page": [
+    "/(pages)/Appxperts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog-details/page.js"
+      "static/css/app/(pages)/Appxperts/page.css",
+      "static/chunks/app/(pages)/Appxperts/page.js"
     ],
     "/(pages)/packages/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/packages/page.js"
-    ],
-    "/(pages)/technology-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/technology-services/page.js"
-    ],
-    "/(pages)/project/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/project/page.js"
-    ],
-    "/(pages)/project-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/project-details/page.js"
-    ],
-    "/(pages)/business-growth/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/business-growth/page.js"
-    ],
-    "/(pages)/business-solution/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/business-solution/page.js"
-    ],
-    "/(pages)/marketing-solution/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/marketing-solution/page.js"
-    ],
-    "/(pages)/business-marketing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/business-marketing/page.js"
-    ],
-    "/(pages)/business-support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/business-support/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
