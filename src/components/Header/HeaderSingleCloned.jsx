@@ -31,11 +31,7 @@ const HeaderSingleCloned = () => {
       <Container fluid>
         <div className='main-header__inner'>
           <div className='main-header__logo'>
-<<<<<<< HEAD
             <Link href='/Appxperts'>
-=======
-            <Link href='/home1'>
->>>>>>> 7232698 (first commit)
               <Image
                 src={main_logo}
                 alt='Tolak HTML'
@@ -61,22 +57,14 @@ const HeaderSingleCloned = () => {
               <span></span>
               <span></span>
             </div>
-<<<<<<< HEAD
             {/* <Link
-=======
-            <Link
->>>>>>> 7232698 (first commit)
               href='#'
               onClick={toggleSearch}
               className='search-toggler main-header__search'
             >
               <i className='icon-magnifying-glass' aria-hidden='true'></i>
               <span className='sr-only'>Search</span>
-<<<<<<< HEAD
             </Link> */}
-=======
-            </Link>
->>>>>>> 7232698 (first commit)
             <a href='cart' className='main-header__cart'>
               <i className='icon-shopping-cart' aria-hidden='true'></i>
               <span className='sr-only'>Search</span>
