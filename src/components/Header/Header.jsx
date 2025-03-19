@@ -115,7 +115,7 @@ const Header = ({ dark, rtl }) => {
             </button> */}
 <Link 
   href="/packages" 
-  className="tolak-btn" 
+  className="tolak-btn main-header__btn" 
   style={{
     display: "inline-block",
     padding: "12px 30px",
@@ -129,13 +129,14 @@ const Header = ({ dark, rtl }) => {
     transition: "all 0.3s ease-in-out",
     textAlign: "center",
     textDecoration: "none",
-    position: "relative",
-    top: "-15", // Moves the button upward
-    outline: "none"
+    outline: "none",
+      marginTop: "40px"
   }}
 >
   <b>Discover More</b>
+  <span></span>
 </Link>
+
 
 
           </div>

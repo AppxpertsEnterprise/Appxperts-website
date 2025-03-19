@@ -33,6 +33,16 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/gallery/page.css",
       "static/chunks/app/(pages)/gallery/page.js"
+    ],
+    "/(pages)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/contact/page.js"
+    ],
+    "/(pages)/project/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/project/page.js"
     ]
   }
 }

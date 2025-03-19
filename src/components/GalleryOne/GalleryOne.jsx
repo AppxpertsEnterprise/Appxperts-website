@@ -76,28 +76,31 @@ const GalleryOne = () => {
                     />
                 </InputGroup> */}
 
-                <Masonry className={`${styles.masonryLayout} row position-relative`}>
-                    {displayedImages.map(({ id, src, alt, md, lg }, index) => (
-                        <Col key={id} md={md} lg={lg} className={styles.galleryItem}>
-                            <div className={styles.galleryCard} >
-                                <Image
-                                    src={src}
-                                    alt={alt}
-                                    layout="intrinsic"
-                                    width={400}
-                                    height={200}
-                                    className={styles.trendingImage}
-                                />
-                            </div>
-                        </Col>
-                    ))}
-                </Masonry>
+<div className={styles.galleryScrollContainer}>
+    {displayedImages.map(({ id, src, alt }, index) => (
+        <div key={id} className={styles.galleryItem} onClick={() => handleClick(src, index)}>
+            <Image
+                src={src}
+                alt={alt}
+                width={220}  // Adjusted width
+                height={150} // Adjusted height
+                className={styles.trendingImage}
+            />
+        </div>
+    ))}
+</div>
 
-                {hasMore && (
-                    <div className="text-center mt-4">
-                        <button className="btn btn-primary" onClick={loadMoreImages}>Load More</button>
-                    </div>
-                )}
+
+
+
+{hasMore && (
+    <div className="text-center mt-4">
+        <button className={styles.loadMoreBtn} onClick={loadMoreImages}>
+            Load More
+        </button>
+    </div>
+)}
+
             </Container>
 
             {clickedImg && (

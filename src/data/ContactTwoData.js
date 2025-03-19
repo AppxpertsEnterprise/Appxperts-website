@@ -36,15 +36,15 @@ const contactTwoData = {
       title: "LOCATION",
       text: [
         {
-          name: "INDIA",
+          name: "India",
           link: "https://www.google.com/maps",
         },
         {
-          name: "DUBAI",
+          name: "Dubai",
           link: "https://www.google.com/maps",
         },
         {
-          name: "SINGAPORE",
+          name: "Singapore",
           link: "https://www.google.com/maps",
         },
       ],
@@ -63,12 +63,12 @@ const contactTwoData = {
       link: "https://wa.me/+918825528905", // WhatsApp link with your number
       name: "WhatsApp",
     },
-    {
-      id: 3,
-      icon: faTwitter,
-      link: "https://twitter.com",
-      name: "Twitter",
-    },
+    // {
+    //   id: 3,
+    //   icon: faTwitter,
+    //   link: "https://twitter.com",
+    //   name: "Twitter",
+    // },
     {
       id: 4,
       icon: faInstagram,

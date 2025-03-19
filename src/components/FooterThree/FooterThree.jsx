@@ -5,6 +5,9 @@ import Link from 'next/link';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
+// Importing FontAwesome Icons
+import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
+
 const { logo, footerBg, shape, widgetInfo, widgetSocial, footerAbout, services, quickLinks, aboutAppxperts, bottomLinks } = footerData;
 
 const Footer = () => {
@@ -35,17 +38,21 @@ const Footer = () => {
                                 {/* Locations */}
                                 {widgetInfo.locations.map(({ country, mapLink }, index) => (
                                     <li key={index}>
-                                        <span className="fa fa-map-marker" style={{color:"blue"}}></span>
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: "blue", marginRight: "8px" }} />
                                         <Link href={mapLink} target="_blank" rel="noopener noreferrer">
                                             {country}
                                         </Link>
                                     </li>
                                 ))}
+                                {/* Phone Number */}
                                 <li>
-                                    <span style={{color:"blue"}} className='fa fa-phone'/* className={widgetInfo.telIcon} */></span>
-                                    <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>{widgetInfo.tel}</Link>
+                                    {/* <FontAwesomeIcon  style={{ color: "blue", marginRight: "8px" }} />
+                                    <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>
+                                        {widgetInfo.tel}
+                                    </Link> */}
                                 </li>
                             </ul>
+                            {/* Social Icons */}
                             <div className="footer-widget__social">
                                 {widgetSocial.map(({ id, href, icon, title }) => (
                                     <Link href={href} target="_blank" rel="noopener noreferrer" key={id} className="social-icon">
@@ -54,6 +61,7 @@ const Footer = () => {
                                     </Link>
                                 ))}
                             </div>
+                            {/* Footer About Image */}
                             <div className="footer-widget__image">
                                 <Image src={footerAbout} alt="About Appxperts" />
                             </div>

@@ -53,8 +53,8 @@ const projectsData = {
     },
     {
       image: image5,
-      category: "Industry-Specific Solutions",
-      title: "School Management System",
+      category: "School Management System",
+      // title: "School Management System",
       link: "/project-details",
       filterClasses: ["marketing", "software"],
       xl: 3,
@@ -62,8 +62,8 @@ const projectsData = {
     },
     {
       image: image6,
-      category: "Industry-Specific Solutions",
-      title: "Hospital Management System",
+       category: "Hospital Management System",
+      //  title: "Hospital Management System",
       link: "/project-details",
       filterClasses: ["business", "solution"],
       xl: 3,

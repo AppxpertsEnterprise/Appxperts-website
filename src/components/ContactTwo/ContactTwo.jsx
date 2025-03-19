@@ -32,27 +32,45 @@ const ContactTwo = ({ contact }) => {
     return null;
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    ).then(
-      (result) => {
-        console.log(result.text);
-        toast.success('Email sent successfully!');
-      },
-      (error) => {
-        console.log(error.text);
-        toast.error('Failed to send email.');
+  
+    const formData = new FormData(form.current);
+    const data = {
+      name: formData.get("from_name").trim(),
+      email: formData.get("email_id").trim(),
+      message: formData.get("message").trim(),
+    };
+  
+    if (!data.name || !data.email || !data.message) {
+      toast.error("All fields are required!");
+      return;
+    }
+  
+    try {
+      // Send data to API
+      const response = await fetch("http://154.26.130.251:3007/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+  
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || "Failed to submit form");
       }
-    );
-
-    e.target.reset();
+  
+      const result = await response.json();
+      toast.success(result.message || "Message sent successfully!");
+  
+      // Optionally reset the form
+      form.current.reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error(error.message || "Something went wrong!");
+    }
   };
+  
 
   return (
     <section
