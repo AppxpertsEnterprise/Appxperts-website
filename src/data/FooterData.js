@@ -81,9 +81,9 @@ const footerData = {
       { country: "Dubai", mapLink: "https://www.google.com/maps?q=Dubai" },
       { country: "USA", mapLink: "https://www.google.com/maps?q=USA" },
     ],
-    telIcon: faPhone,
-    subHref: "tel",
-    tel: "+918825528905",
+    // telIcon: faPhone,
+    // subHref: "tel",
+    // tel: "+918825528905",
   },
 
   widgetSocial,

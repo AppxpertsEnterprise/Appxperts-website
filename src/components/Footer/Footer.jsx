@@ -46,10 +46,10 @@ const Footer = () => {
                                 ))}
                                 {/* Phone Number */}
                                 <li>
-                                    <FontAwesomeIcon icon={faPhone} style={{ color: "blue", marginRight: "8px" }} />
+                                    {/* <FontAwesomeIcon  style={{ color: "blue", marginRight: "8px" }} />
                                     <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>
                                         {widgetInfo.tel}
-                                    </Link>
+                                    </Link> */}
                                 </li>
                             </ul>
                             {/* Social Icons */}
