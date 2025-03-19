@@ -19,11 +19,23 @@ const page = () => {
             <HeaderInner />
             <HeaderInnerCloned />
 
+    
             <PageHeader 
-    title={<span style={{ fontSize: "28px", fontWeight: "700", color: "#ffffff", textAlign: "center" }}>
-        Smart Solutions, Stronger Businesses – Powered by Appxperts.
+    title={<span style={{ 
+        fontSize: "28px", 
+        fontWeight: "700", 
+        color: "#ffffff", 
+        textAlign: "center", 
+        display: "block", 
+        lineHeight: "1.2",  // Adjust to control spacing
+        whiteSpace: "pre-line"
+    }}>
+        Smart Solutions, Stronger Businesses 
+        Powered by Appxperts.
     </span>}
 />
+
+
 
 
             <BlogDetails />

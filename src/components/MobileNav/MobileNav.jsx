@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const { social, logo_light, navItems } = headerData;
 const MobileNav = () => {
     const { isExpanded, handleToggle } = useRootContext();
+    const { social, logo_light, navItems = [] } = headerData; // Add a fallback empty array
+
     return (
         <div className={`mobile-nav__wrapper ${isExpanded ? "expanded" : ""}`}>
             <div onClick={handleToggle} className="mobile-nav__overlay mobile-nav__toggler"></div>
@@ -20,19 +22,18 @@ const MobileNav = () => {
 
                 <div className="logo-box">
                     <Link href="/" >
-                        <Image src={logo_light.src} width={155} alt="tolak" />
+                        <Image src={logo_light?.src} width={155} alt="tolak" />
                     </Link>
                 </div>
 
                 <div className="mobile-nav__container">
                     <ul className='main-menu__list'>
                         <MegaMenu />
-                        {navItems.map((navItem) => (
+                        {navItems?.map((navItem) => (
                             <MobileNavItems key={navItem.id} navItem={navItem} />
                         ))}
                     </ul>
                 </div>
-
 
                 <ul className="mobile-nav__contact list-unstyled">
                     <li>
@@ -45,20 +46,17 @@ const MobileNav = () => {
                     </li>
                 </ul>
                 <div className="mobile-nav__social">
-                    {social.map(({ icon, link }, index) => (
-
+                    {social?.map(({ icon, link }, index) => (
                         <Link key={index} href={link} target="_blank" rel="noopener noreferrer" >
                             < FontAwesomeIcon icon={icon} />
                             <span className="sr-only">Facebook</span>
                         </Link>
-
                     ))}
-
                 </div>
-            </div >
-
-        </div >
+            </div>
+        </div>
     );
 };
 
 export default MobileNav;
+

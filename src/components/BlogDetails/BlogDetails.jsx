@@ -194,7 +194,25 @@ const BlogDetails = () => {
                                         <textarea onChange={handleChange} name="message" placeholder="Write  a message"></textarea>
                                     </div>
                                     <div className="form-one__control form-one__control--full">
-                                        <button type="submit" className="tolak-btn"><b>Submit Comment</b><span></span></button>
+                                    <button 
+    type="submit" 
+    className="tolak-btn" 
+    style={{
+        borderRadius: "50px", 
+        padding: "10px 30px",
+        fontSize: "16px",
+        fontWeight: "bold",
+        backgroundColor: "#007bff",
+        color: "white",
+        border: "none",
+        cursor: "pointer",
+        transition: "all 0.3s ease"
+    }}
+>
+    <b>Submit Comment</b>
+    <span></span>
+</button>
+
                                     </div>
                                 </div>
                             </form>

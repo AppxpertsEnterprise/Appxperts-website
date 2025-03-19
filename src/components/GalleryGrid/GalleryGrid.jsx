@@ -49,7 +49,7 @@ const GalleryGridCarousel = () => {
                     {galleryGridData.map((item, index) => (
                         <Col key={item.id} md={6} lg={3}>
                             <div className="gallery-one__card">
-                                <Image src={item.src} alt={item.alt} layout="responsive" />
+                                <Image style={{width:"250px"}} src={item.src} alt={item.alt} layout="responsive" />
                                 <div className="gallery-one__card__hover">
                                     <div
                                         onClick={() => handleClick(item.src, index)}

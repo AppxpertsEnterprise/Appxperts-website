@@ -131,7 +131,7 @@ const AboutThree = () => {
                 <div className='about-three__content__quote'>{contQuote}</div>
                 <Row>
                   <Col md={5}>
-                    <div className='about-three__content__btn'>
+                    {/* <div className='about-three__content__btn'>
                       <div
                         style={{ cursor: "pointer" }}
                         onClick={() => setOpen(true)}
@@ -141,7 +141,7 @@ const AboutThree = () => {
                         <span className='video-popup__btn-ripple'></span>
                       </div>
                       Watcing video
-                    </div>
+                    </div> */}
                   </Col>
                   <Col lg={7}>
                     <div className='about-three__content__author'>

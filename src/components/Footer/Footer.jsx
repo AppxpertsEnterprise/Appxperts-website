@@ -5,11 +5,14 @@ import Link from 'next/link';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
+// Importing FontAwesome Icons
+import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
+
 const { logo, footerBg, shape, widgetInfo, widgetSocial, footerAbout, services, quickLinks, aboutAppxperts, bottomLinks } = footerData;
 
 const Footer = () => {
     const year = new Date().getFullYear();
-    
+
     return (
         <footer className="main-footer background-black">
             {/* Background Styling */}
@@ -32,21 +35,24 @@ const Footer = () => {
                                 <Image src={logo} width={160} height={160} alt="Appxperts Logo" />
                             </Link>
                             <ul className="footer-widget__info">
+                                {/* Locations */}
+                                {widgetInfo.locations.map(({ country, mapLink }, index) => (
+                                    <li key={index}>
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: "blue", marginRight: "8px" }} />
+                                        <Link href={mapLink} target="_blank" rel="noopener noreferrer">
+                                            {country}
+                                        </Link>
+                                    </li>
+                                ))}
+                                {/* Phone Number */}
                                 <li>
-                                    <span className={widgetInfo.timeIcon}></span>
-                                    {widgetInfo.time.split("\n").map((t, i) => (
-                                        <React.Fragment key={i}>{t} <br /></React.Fragment>
-                                    ))}
-                                </li>
-                                <li>
-                                    <span className={widgetInfo.locationIcon}></span>
-                                    {widgetInfo.location}
-                                </li>
-                                <li>
-                                    <span className={widgetInfo.telIcon}></span>
-                                    <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>{widgetInfo.tel}</Link>
+                                    <FontAwesomeIcon icon={faPhone} style={{ color: "blue", marginRight: "8px" }} />
+                                    <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>
+                                        {widgetInfo.tel}
+                                    </Link>
                                 </li>
                             </ul>
+                            {/* Social Icons */}
                             <div className="footer-widget__social">
                                 {widgetSocial.map(({ id, href, icon, title }) => (
                                     <Link href={href} target="_blank" rel="noopener noreferrer" key={id} className="social-icon">
@@ -55,6 +61,7 @@ const Footer = () => {
                                     </Link>
                                 ))}
                             </div>
+                            {/* Footer About Image */}
                             <div className="footer-widget__image">
                                 <Image src={footerAbout} alt="About Appxperts" />
                             </div>

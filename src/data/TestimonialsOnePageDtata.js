@@ -15,7 +15,7 @@ const testimonialsOnePageData = {
                    image: image1,
                    icon: "icofont-quote-left",
                    content: "Many designers listen but do not understand. Appxperts' staff listens to the organization's heartbeat and designs to the highest quality. We have worked with Logo Design.",
-                   name: "Salsabeel",
+                   name: "MINDDATE",
                    designation: "Founder",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },
@@ -24,7 +24,7 @@ const testimonialsOnePageData = {
                    image: image2,
                    icon: "icofont-quote-left",
                    content: "we got our logo to exactly what I desired within days. They were incredible.  I will absolutely back for future (and all) projects. Thank you very much!",
-                   name: "Fortune consultancy",
+                   name: "HALAL INDIA",
                    designation: "Manager",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },
@@ -33,7 +33,7 @@ const testimonialsOnePageData = {
                    image: image3,
                    icon: "icofont-quote-left",
                    content: "We appreciate their flexibility and customer-centric approach We have got more followers and increased brand awareness in the market since working with Appxperts.",
-                   name: "Bro Go Burgers",
+                   name: "Pan Seas",
                    designation: "Co Founder",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },
@@ -42,7 +42,7 @@ const testimonialsOnePageData = {
                    image: image4,
                    icon: "icofont-quote-left",
                    content: "In a short period, we boosted our engagement by 900% and our following by 80% In addition, we improved our content planning processes.",
-                   name: "Petpluz",
+                   name: "SKP",
                    designation: "Customer",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },
@@ -60,7 +60,7 @@ const testimonialsOnePageData = {
                    image: image2,
                    icon: "icofont-quote-left",
                    content: "Appxperts is the best Instagram marketing service I've ever used. My business has grown exponentially since I started working with Appxperts. ",
-                   name: "Toni & Guy",
+                   name: "INDIAN RESTAURANT",
                    designation: "Co Founder",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },

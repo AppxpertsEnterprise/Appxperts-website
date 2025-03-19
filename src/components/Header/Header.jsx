@@ -102,7 +102,7 @@ const Header = ({ dark, rtl }) => {
               <span></span>
             </button>
 
-            <button className="main-header__toggler" onClick={toggleSidebar}>
+            {/* <button className="main-header__toggler" onClick={toggleSidebar}>
               <span></span>
               <span></span>
               <span></span>
@@ -112,11 +112,32 @@ const Header = ({ dark, rtl }) => {
               <span></span>
               <span></span>
               <span></span>
-            </button>
-              <Link href="/packages" className="tolak-btn main-header__btn" style={{marginTop:"40px"}}>
-                          <b>Discover More</b>
-                          <span></span>
-                        </Link>
+            </button> */}
+<Link 
+  href="/packages" 
+  className="tolak-btn" 
+  style={{
+    display: "inline-block",
+    padding: "12px 30px",
+    borderRadius: "50px",
+    backgroundColor: "#007bff",
+    color: "white",
+    fontWeight: "bold",
+    fontSize: "16px",
+    border: "none",
+    cursor: "pointer",
+    transition: "all 0.3s ease-in-out",
+    textAlign: "center",
+    textDecoration: "none",
+    position: "relative",
+    top: "-15", // Moves the button upward
+    outline: "none"
+  }}
+>
+  <b>Discover More</b>
+</Link>
+
+
           </div>
 
         </div>

@@ -16,13 +16,13 @@ const ctaTwoData = {
     texts: [
         {
             id: 1,
-            title: "INDIA - +91882552890",
+            title: "India  +91882552890",
             subHref: "tel"
 
         },
         {
             id: 2,
-            title: "SINGAPORE - +65843993175",
+            title: "Singapore  +65843993175",
             subHref: "tel"
 
         }

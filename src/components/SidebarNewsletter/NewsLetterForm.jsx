@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
@@ -31,32 +30,36 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
     });
   }, []);
 
-  const submit = async () => {
+  const handleSubmit = async () => {
     if (!email || !email.includes("@")) {
       toast.error("Please enter a valid email address.");
       return;
     }
-  
+
     setIsSubmitting(true);
-  
+
     try {
-      const response = await fetch("https://appxperts.onrender.com/subscriber", {
+      const response = await fetch("http://154.26.130.251:3007/subscriber", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
         body: JSON.stringify({ email }),
       });
-  
-      // Check if response is JSON
+
+      // Ensure response is valid JSON
       const contentType = response.headers.get("content-type");
       if (!contentType || !contentType.includes("application/json")) {
         throw new Error("Invalid response from server.");
       }
-  
+
       const result = await response.json();
+
       if (!response.ok) {
         throw new Error(result.error || "Subscription failed.");
       }
-  
+
       toast.success(result.message || "Subscription successful! Thank you.");
       setEmail("");
     } catch (error) {
@@ -66,7 +69,6 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
       setIsSubmitting(false);
     }
   };
-  
 
   return (
     <div
@@ -80,24 +82,21 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
           : "sidebar-one__newsletter"
       } mc-form`}
     >
+      <input
+        type="email"
+        name="EMAIL"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email address"
+        disabled={isSubmitting}
+        style={{ width: "300px", padding: "10px" }} // Adjust width as needed
+      />
 
-     <input
-  type="email"
-  name="EMAIL"
-  value={email}
-  onChange={(e) => setEmail(e.target.value)}
-  placeholder="Email address"
-  disabled={isSubmitting}
-  style={{ width: "300px", padding: "10px" }} // Adjust width as needed
-/>
-
-<button type="button" className="tolak-btn">
-  <b>Subscribe</b>
-  <span style={{ top: "295.76px", left: "-154.781px" }}></span>
-  <span className="sr-only">Subscribe</span>
-</button>
-
-
+      <button type="button" className="tolak-btn" onClick={handleSubmit} disabled={isSubmitting}>
+        <b>{isSubmitting ? "Submitting..." : "Subscribe"}</b>
+        <span></span>
+        <span className="sr-only">Subscribe</span>
+      </button>
 
       <div className="mc-form__response">
         {isSubmitting && <div>Sending...</div>}

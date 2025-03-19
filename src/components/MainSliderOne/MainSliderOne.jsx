@@ -138,8 +138,8 @@ const MainSliderOne = () => {
         </div>
 
         <h5 className="main-slider-one__project__number count-box">
-          <ScrollTriggerCount count={1283} />
-          k+
+          <ScrollTriggerCount count={250} />
+          +
         </h5>
         <p className="main-slider-one__project__title">Complete Projects</p>
       </div>

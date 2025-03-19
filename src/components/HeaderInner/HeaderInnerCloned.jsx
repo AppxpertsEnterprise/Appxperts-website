@@ -1,69 +1,102 @@
-'use client'
+"use client";
 import headerData from "@/data/HeaderData";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import MegaMenu from "../MegaMenu/MegaMenu";
+import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import NavItems from "../NavItems/NavItems";
 import { useRootContext } from "@/Provider/context";
+import MegaMenu from "../MegaMenu/MegaMenu";
 import useScrollUp from "@/hooks/useScrollUp";
 
-const { navItems, logo_light } = headerData;
-const HeaderInnerCloned = () => {
+const { navItems, main_logo, logo_light, logo_rtl } = headerData;
+
+const HeaderCloned = ({ dark, rtl }) => {
+  const [mounted, setMounted] = useState(false);
   const scrollToTop = useScrollUp(500);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const { toggleSearch, handleToggle, toggleSidebar } = useRootContext();
+
+  if (!mounted) {
+    return null;
+  }
+ 
   return (
-    <header className={`main-header-inner sticky-header sticky-header--normal sticky-header--cloned  ${scrollToTop ? " active" : ""}`}>
-      <div className='container'>
-        <div className='main-header-inner__inner'>
-          <div className='main-header-inner__logo'>
-
-            <Link href='/Appxperts'>
-
+    <header className={`main-header sticky-header sticky-header--normal sticky-header--cloned ${scrollToTop ? "active" : ""}`}>
+      <Container fluid>
+        <div className="main-header__inner">
+          <div className="main-header__logo">
+            <Link href="/Appxperts">
               <Image
-                src={logo_light}
-                alt='Tolak HTML'
-                width={150}
-                style={{ height: "150" }}
+                src={dark ? logo_light : rtl ? logo_rtl : main_logo}
+                alt="Tolak HTML"
+                width={184}
+                style={{ height: "auto" }}
               />
             </Link>
           </div>
 
-          <nav className='main-header-inner__nav main-menu'>
-            <ul className='main-menu__list'>
-              <MegaMenu />
-
+          <nav className="main-header__nav main-menu">
+            <ul className="main-menu__list">
+              <MegaMenu pageTitle="home" />
               {navItems.map((item) => (
                 <NavItems key={item.id} item={item} />
               ))}
-              <li className='dot'></li>
+              <li className="dot"></li>
             </ul>
           </nav>
-          <div className='main-header-inner__right'>
-            <div
-              onClick={handleToggle}
-              className='mobile-nav__btn mobile-nav__toggler'
-            >
+
+          <div className="main-header__right">
+            <div onClick={handleToggle} className="mobile-nav__btn mobile-nav__toggler">
               <span></span>
               <span></span>
               <span></span>
             </div>
-            {/* <Link
-              onClick={toggleSearch}
-              href='#'
-              className='search-toggler main-header-inner__search'
-            >
-              <i className='icon-magnifying-glass'></i>
-            </Link> */}
-            <Link href='contact' className='tolak-btn main-header-inner__btn'>
-              <b>Discover More</b>
+{/* 
+            <Link href="#" onClick={toggleSidebar} className="main-header__toggler">
               <span></span>
-            </Link>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </Link> */}
+
+<Link 
+  href="/packages" 
+  className="tolak-btn main-header__btn" 
+  style={{
+    display: "inline-block",
+    padding: "12px 30px",
+    borderRadius: "50px",
+    backgroundColor: "#007bff",
+    color: "white",
+    fontWeight: "bold",
+    fontSize: "16px",
+    border: "none",
+    cursor: "pointer",
+    transition: "all 0.3s ease-in-out",
+    textAlign: "center",
+    textDecoration: "none",
+    outline: "none"
+  }}
+>
+  <b>Discover More</b>
+  <span></span>
+</Link>
+
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };
 
-export default HeaderInnerCloned;
+export default HeaderCloned;

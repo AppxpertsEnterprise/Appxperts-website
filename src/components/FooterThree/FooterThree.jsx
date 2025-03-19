@@ -9,7 +9,7 @@ const { logo, footerBg, shape, widgetInfo, widgetSocial, footerAbout, services, 
 
 const Footer = () => {
     const year = new Date().getFullYear();
-    
+
     return (
         <footer className="main-footer background-black">
             {/* Background Styling */}
@@ -32,24 +32,23 @@ const Footer = () => {
                                 <Image src={logo} width={160} height={160} alt="Appxperts Logo" />
                             </Link>
                             <ul className="footer-widget__info">
+                                {/* Locations */}
+                                {widgetInfo.locations.map(({ country, mapLink }, index) => (
+                                    <li key={index}>
+                                        <span className="fa fa-map-marker" style={{color:"blue"}}></span>
+                                        <Link href={mapLink} target="_blank" rel="noopener noreferrer">
+                                            {country}
+                                        </Link>
+                                    </li>
+                                ))}
                                 <li>
-                                    <span className={widgetInfo.timeIcon}></span>
-                                    {widgetInfo.time.split("\n").map((t, i) => (
-                                        <React.Fragment key={i}>{t} <br /></React.Fragment>
-                                    ))}
-                                </li>
-                                <li>
-                                    <span className={widgetInfo.locationIcon}></span>
-                                    {widgetInfo.location}
-                                </li>
-                                <li>
-                                    <span className={widgetInfo.telIcon}></span>
+                                    <span style={{color:"blue"}} className='fa fa-phone'/* className={widgetInfo.telIcon} */></span>
                                     <Link href={`${widgetInfo.subHref}:${widgetInfo.tel}`}>{widgetInfo.tel}</Link>
                                 </li>
                             </ul>
                             <div className="footer-widget__social">
                                 {widgetSocial.map(({ id, href, icon, title }) => (
-                                    <Link href={href} key={id} target="_blank" rel="noopener noreferrer" className="social-icon">
+                                    <Link href={href} target="_blank" rel="noopener noreferrer" key={id} className="social-icon">
                                         <FontAwesomeIcon icon={icon} />
                                         <span className="sr-only">{title}</span>
                                     </Link>

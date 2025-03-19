@@ -8,7 +8,7 @@ import image6 from '@/assets/images/resources/service-2-6.jpg';
 const serviceOneData = {
   tagLine: "Our Best Service",
   title: "We Kinds of Services Business",
-  title2: "We Leadership This Service",
+  title2: "We Leadership These Service",
   items: [
     {
       id: 1,

@@ -20,7 +20,7 @@ const funFactOneData = {
 
       text: 'Projects Successfully Delivered',
 
-      count: "26",
+      count: "250",
       identity: "funfact-one__item--two"
     },
     {
@@ -28,7 +28,7 @@ const funFactOneData = {
 
       text: 'Dedicated 24/7 Customer Support',
 
-      count: "26",
+       count: "26",
       identity: "funfact-one__item--three"
     }
   ],

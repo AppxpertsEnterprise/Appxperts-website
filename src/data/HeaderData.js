@@ -231,23 +231,29 @@ const headerData = {
     {
       id: 2,
       icon: faMapMarkerAlt,
-      content: "INDIA",
+      content: "India",
       href: "https://www.google.com/maps/place/AppXperts+Enterprise+Solutions/@12.9098612,80.1933659,17z/",
     },
     {
       id: 3,
       icon: faMapMarkerAlt,
-      content: "SINGAPORE",
+      content: "Singapore",
       href: "https://www.google.com/maps",
     },
     {
       id: 4,
       icon: faMapMarkerAlt,
-      content: "DUBAI",
+      content: "Dubai",
       href: "https://www.google.com/maps",
     },
     {
       id: 5,
+      icon: faMapMarkerAlt,
+      content: "USA",
+      href: "https://www.google.com/maps",
+    },
+    {
+      id: 6,
       icon: faPhone,  
       content: "Call", // Updated call content
       href: "tel:+918825528905",  

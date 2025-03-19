@@ -35,7 +35,7 @@ const ContactOne = ({ rtl }) => {
     }
   
     try {
-      const response = await fetch('https://appxperts.onrender.com/contact', {
+      const response = await fetch('http://154.26.130.251:3007/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

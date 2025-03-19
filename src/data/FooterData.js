@@ -14,6 +14,7 @@ import post2 from "@/assets/images/blog/lp-1-2.jpg";
 import post6 from "@/assets/images/blog/lp-1-6.jpg";
 import post7 from "@/assets/images/blog/lp-1-7.jpg";
 
+// Importing FontAwesome Icons
 import {
   faFacebookF,
   faInstagram,
@@ -23,8 +24,9 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faMapMarkerAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+// Social Media Links
 const widgetSocial = [
   { id: 1, icon: faFacebookF, href: "https://www.facebook.com/AppXes", title: "Facebook" },
   { id: 2, icon: faInstagram, href: "https://www.instagram.com/appxperts.solutions/", title: "Instagram" },
@@ -33,50 +35,24 @@ const widgetSocial = [
   { id: 5, icon: faEnvelope, href: "mailto:info@appxes.com", title: "Mail" },
 ];
 
+// Recent Blog Posts
 const posts = {
   title: "Recent Posts",
   posts: [
-    {
-      id: 1,
-      image: post1,
-      meta: "23 Jun 2023",
-      title: "We round solution york Blog",
-      href: "blog-details",
-      icon: "icofont-calendar",
-    },
-    {
-      id: 2,
-      image: post2,
-      meta: "23 Jun 2023",
-      title: "We Should be Descriptive",
-      href: "blog-details",
-      icon: "icofont-calendar",
-    },
+    { id: 1, image: post1, meta: "23 Jun 2023", title: "We round solution york Blog", href: "blog-details", icon: "icofont-calendar" },
+    { id: 2, image: post2, meta: "23 Jun 2023", title: "We Should be Descriptive", href: "blog-details", icon: "icofont-calendar" },
   ],
 };
 
 const postsSix = {
   title: "Recent Posts",
   posts: [
-    {
-      id: 1,
-      image: post6,
-      meta: "20 Nov 2024",
-      title: "This Specific Issue Network Security",
-      href: "blog-details",
-      icon: "icofont-calendar",
-    },
-    {
-      id: 2,
-      image: post7,
-      meta: "23 Jun 2024",
-      title: "Looking For a Solution Related",
-      href: "blog-details",
-      icon: "icofont-calendar",
-    },
+    { id: 1, image: post6, meta: "20 Nov 2024", title: "This Specific Issue Network Security", href: "blog-details", icon: "icofont-calendar" },
+    { id: 2, image: post7, meta: "23 Jun 2024", title: "Looking For a Solution Related", href: "blog-details", icon: "icofont-calendar" },
   ],
 };
 
+// Footer Information
 const footerData = {
   footerLogo,
   logo,
@@ -91,37 +67,47 @@ const footerData = {
   footerAbout,
   posts,
   postsSix,
-  aboutTwoText:
-    "We are a cutting-edge software solutions provider, delivering high-quality products with a focus on innovation and client satisfaction.",
-  widgetText:
-    "Appxperts offers industry-leading software solutions, specializing in web and mobile development, cloud services, and enterprise solutions.",
+  aboutTwoText: "We are a cutting-edge software solutions provider, delivering high-quality products with a focus on innovation and client satisfaction.",
+  widgetText: "Appxperts offers industry-leading software solutions, specializing in web and mobile development, cloud services, and enterprise solutions.",
+
+  // Widget Info (Contact, Location)
   widgetInfo: {
-    time: "Open Hours:\n Mon - Sat: 10.00 am - 7.00 pm",
-    timeIcon: "icofont-clock-time",
-    location: "No 32, 2nd Floor, Swathika Flats, Rukmani Nagar, Perumbakkam, Chennai 600100",
-    locationIcon: "icofont-location-pin",
-    tel: "+91 8825528905",
-    telIcon: "icofont-phone",
+    timeIcon: "fa fa-clock",
+    time: "Mon - Fri: 9 AM - 6 PM\nSat - Sun: Closed",
+    locationIcon: faMapMarkerAlt,
+    locations: [
+      { country: "India", mapLink: "https://www.google.com/maps?q=India" },
+      { country: "Singapore", mapLink: "https://www.google.com/maps?q=Singapore" },
+      { country: "Dubai", mapLink: "https://www.google.com/maps?q=Dubai" },
+      { country: "USA", mapLink: "https://www.google.com/maps?q=USA" },
+    ],
+    telIcon: faPhone,
     subHref: "tel",
+    tel: "+918825528905",
   },
+
   widgetSocial,
+
+  // Footer Navigation Links
   services: [
     { id: 1, href: "/about", title: "Why Choose Us" },
     { id: 2, href: "/services", title: "Our Services" },
-    /* { id: 3, href: "/reviews", title: "Partners" }, */
     { id: 3, href: "/project", title: "Our Products" },
     { id: 4, href: "/contact", title: "Contact Us" },
   ],
+
   quickLinks: [
     { id: 1, href: "/gallery", title: "Clients" },
     { id: 2, href: "/packages", title: "Packages" },
     { id: 3, href: "/contact", title: "Contact" },
     { id: 4, href: "/blog-grid-right", title: "Blog" },
   ],
+
   aboutAppxperts: [
-   /*  { id: 1, href: "/about", title: "Who We Are" }, */
-    /* { id: 2, href: "/contact", title: "Contact Us" }, */
+    // { id: 1, href: "/about", title: "Who We Are" },
+    // { id: 2, href: "/contact", title: "Contact Us" },
   ],
+
   bottomLinks: [
     { id: 1, href: "/about", title: "About Us" },
     { id: 2, href: "/services", title: "Services" },

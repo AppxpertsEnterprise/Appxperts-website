@@ -1,10 +1,5 @@
 {
   "pages": {
-    "/(pages)/business-growth/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/business-growth/page.js"
-    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -17,10 +12,27 @@
       "static/css/app/(pages)/Appxperts/page.css",
       "static/chunks/app/(pages)/Appxperts/page.js"
     ],
-    "/(pages)/packages/page": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/packages/page.js"
+      "static/css/app/(pages)/about/page.css",
+      "static/chunks/app/(pages)/about/page.js"
+    ],
+    "/(pages)/project-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/project-details/page.js"
+    ],
+    "/(pages)/blog-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/blog-details/page.js"
+    ],
+    "/(pages)/gallery/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/gallery/page.css",
+      "static/chunks/app/(pages)/gallery/page.js"
     ]
   }
 }

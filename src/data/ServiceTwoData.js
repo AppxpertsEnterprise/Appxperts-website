@@ -6,7 +6,7 @@ import image5 from '@/assets/images/resources/service-1-5.jpg'
 import image6 from '@/assets/images/resources/service-1-6.jpg'
 const serviceTwoData = {
     tagLine: "Our Best Service",
-    title: "We Leadership This Service",
+    title: "We Leadership These Service",
     carouselData: [
         {
             id: 1,
@@ -32,7 +32,7 @@ const serviceTwoData = {
             id: 3,
             image: image3,
             icon: "icon-headhunter",
-            title: "Mobile Applications Development",
+            title: "ERP Software Development and Maintenance",
             text: "Get your digital ideas up and running in a secure and beautiful manner with our best Web and Mobile Application Development Services.",
             href: "marketing-solution"
         },

@@ -33,9 +33,9 @@ const featureOneData = {
             id: 4,
             icon: "icon-trophy",
             title: "Authenticity",
-            text: "You can be easily duped by thier assertions that big agencies chanrge exorbitant rates.",
+            text: "You can be easily duped by thier assertions that big agencies change exorbitant rates.",
             title: "Authenticity",
-            text: "You can be easily duped by thier assertions that big agencies chanrge exorbitant rates.",
+            text: "You can be easily duped by thier assertions that big agencies change exorbitant rates.",
 
 
 
