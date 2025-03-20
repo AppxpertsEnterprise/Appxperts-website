@@ -61,14 +61,17 @@ const ProjectTwo = () => {
                 <div className="project-two__item__image">
                   {/* ✅ Removed Border, Added Smooth Box Shadow */}
                   <Image
-                    src={project.image}
-                    alt={project.title}
-                    style={{
-                      borderRadius: "10px",
-                      boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)", // Enhanced shadow for depth
-                      transition: "all 0.3s ease-in-out",
-                    }}
-                  />
+  src={project.image}
+  alt={project.title}
+  style={{
+    paddingLeft: "20px",
+    borderRadius: "12px", /* Smooth rounded corners */
+    border: "3px solid #e0e0e0", /* Light gray border */
+    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)", /* Professional depth effect */
+    transition: "all 0.3s ease-in-out",
+  }}
+/>
+
                 </div>
                 <div className="project-two__item__content">
                   <p className="project-two__item__cats">{project.category}</p>

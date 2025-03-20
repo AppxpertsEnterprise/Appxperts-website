@@ -1,4 +1,5 @@
 'use client';
+
 import contactOneData from '@/data/ContactOneData';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,6 +12,7 @@ const { infoIcon, infoTitle, image, imageRtl, bg, texts, tagLine, imageTwo, titl
 const ContactOne = ({ rtl }) => {
   const form = useRef(null);
   const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -22,37 +24,60 @@ const ContactOne = ({ rtl }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const data = {
-      name: e.target.from_name.value.trim(),
-      email: e.target.email_id.value.trim(),
-      message: e.target.message.value.trim(),
-    };
+    const name = e.target.from_name.value.trim();
+    const email = e.target.email_id.value.trim();
+    const message = e.target.message.value.trim();
   
-    // Ensure all fields are filled
-    if (!data.name || !data.email || !data.message) {
-      toast.error('All fields are required!');
+    // ✅ Check if all fields are filled
+    if (!name || !email || !message) {
+      toast.error("All fields are required!");
       return;
     }
   
+    // ✅ Validate email format using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address!");
+      return;
+    }
+  
+    const data = { name, email, message };
+    setLoading(true);
+  
+    const data = { name, email, message };
+    setLoading(true);
+  
     try {
-      const response = await fetch('http://154.26.130.251:3007/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("http://154.26.130.251:3007/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
   
-      if (!response.ok) {
-        const result = await response.json();
-        throw new Error(result.error || 'Failed to submit form');
+      // ✅ Check if the response is valid JSON before parsing
+      let result;
+      try {
+        result = await response.json();
+      } catch (jsonError) {
+        throw new Error("Server returned invalid response format");
       }
   
-      toast.success('Message sent successfully!');
-    } catch (error) {
-      console.error(error);
-      toast.error(error.message);
-    }
+      console.log("Response Status:", response.status);
+      console.log("Response Data:", result);
   
-    e.target.reset();
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to submit form");
+      }
+  
+      toast.success("Message sent successfully!");
+      e.target.reset(); // ✅ Reset the form only if submission is successful
+  
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error(error.message || "Something went wrong!");
+    } finally {
+      setLoading(false);
+    }
   };
   
 
@@ -80,6 +105,7 @@ const ContactOne = ({ rtl }) => {
           </Col>
         </Row>
       </Container>
+
       <Container className="contact-one__container wow fadeInUp" data-aos="fade-up" data-aos-delay="100">
         <div className="contact-one__wrapper" style={{ backgroundImage: `url(${bg.src})` }}>
           <Row>
@@ -102,6 +128,7 @@ const ContactOne = ({ rtl }) => {
                     <Fragment key={i}>{t} <br /></Fragment>
                   ))}
                 </p>
+
                 <form onSubmit={handleSubmit} ref={form} className="contact-one__form contact-form-validated form-one">
                   <div className="form-one__group">
                     <div className="form-one__control">
@@ -114,8 +141,29 @@ const ContactOne = ({ rtl }) => {
                       <textarea name="message" placeholder="Message" required></textarea>
                     </div>
                     <div className="form-one__control form-one__control--full">
-                      <button type="submit" className="tolak-btn">
-                        <b>Send Request</b><span></span>
+                      <button 
+                        type="submit" 
+                        className="tolak-btn"
+                        disabled={loading}
+                        style={{
+                          display: "inline-block",
+                          padding: "12px 30px",
+                          borderRadius: "50px",
+                          backgroundColor: loading ? "#6c757d" : "#007bff",
+                          color: "white",
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          border: "none",
+                          cursor: loading ? "not-allowed" : "pointer",
+                          transition: "all 0.3s ease-in-out",
+                          textAlign: "center",
+                          textDecoration: "none",
+                          outline: "none",
+                          marginTop: "40px",
+                        }}
+                      >
+                        <b>{loading ? "Sending..." : "Send Request"}</b>
+                        <span></span>
                       </button>
                     </div>
                   </div>

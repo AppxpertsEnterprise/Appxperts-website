@@ -7002,12 +7002,17 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 
-.funfact-two__list {
+
+ .funfact-two__list {
   display: flex;
-  margin: 0;
-  justify-content: space-between;
-  gap: 0;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Space between each item */
+  padding: 10px 0; /* Reduce top & bottom padding */
+  margin: 0; /* Ensures no extra margin */
 }
+
 
 @media (max-width: 991px) {
   .funfact-two__list {
@@ -7017,10 +7022,9 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .funfact-two__item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  max-width: none;
+    text-align: center; /* Centers text */
+    padding: 5px 25px; /* Adjust padding (reduced top/bottom) */
+    margin: 0; /* Ensures no extra margin */
 }
 
 @media (max-width: 991px) {

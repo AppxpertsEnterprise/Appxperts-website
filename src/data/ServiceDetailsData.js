@@ -161,7 +161,7 @@ const serviceDetailsData = [
                 ],
             },
         ],
-        solutionText: "Tailored digital marketing strategies that engage your audience, drive conversions, and enhance brand awareness.",
+       
         contentImage: content,
         lastText: "We offer data-driven marketing solutions designed to increase your brand's impact, engagement, and growth in the digital world.",
     },

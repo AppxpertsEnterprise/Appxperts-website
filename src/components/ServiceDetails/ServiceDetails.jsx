@@ -87,9 +87,9 @@ const ServiceDetails = () => {
                                     </Col>
                                 ))}
                             </Row>
-                            <p className="service-details__text">
+                            {/* <p className="service-details__text">
                                 <span>Solution:</span> {solutionText}
-                            </p>
+                            </p> */}
                         </Col>
                         <Col lg={6}>
                             <div className="service-details__content__image">

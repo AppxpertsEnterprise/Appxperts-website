@@ -6849,9 +6849,10 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .funfact-two__list {
   display: flex;
-  margin: 0;
-  justify-content: space-between;
-  gap: 0;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
 }
 
 @media (max-width: 991px) {

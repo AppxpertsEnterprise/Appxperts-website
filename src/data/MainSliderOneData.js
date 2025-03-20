@@ -14,7 +14,7 @@ const mainSliderOneData = [
         title: "Innovate Your Business<br> with Our Tech Soluti<span>o</span>ns",
         text: "Empowering enterprises with advanced software development services tailored to meet your business needs.",
         social: [
-            { id: 1, icon: faInstagram, link: "https://instagram.com/AppXperts.solution", name: "Instagram" },
+            { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram" },
             { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
             { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
         ],
@@ -28,7 +28,7 @@ const mainSliderOneData = [
         title: "Custom Solutions<br> to Drive Growth",
         text: "Transform your ideas into powerful software solutions that scale with your business.",
         social: [
-            { id: 1, icon: faInstagram, link: "https://instagram.com/AppXperts.solution", name: "Instagram" },
+            { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram" },
             { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
             { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
         ],
@@ -42,7 +42,7 @@ const mainSliderOneData = [
         title: "End-to-End<br> Software Development",
         text: "Delivering next-generation IT solutions for startups and enterprises with creativity and precision.",
         social: [
-            { id: 1, icon: faInstagram, link: "https://instagram.com/AppXperts.solution", name: "Instagram" },
+            { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram" },
             { id: 2, icon: faWhatsapp, link: "https://wa.me/88255 28905", name: "WhatsApp" },
             { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXe", name: "Facebook" },
         ],

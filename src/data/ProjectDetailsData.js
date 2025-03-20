@@ -37,12 +37,12 @@ const projectDetailsData = {
     solutionText: `Our team follows a structured approach to designing and developing software solutions tailored to meet your unique business needs.`,
     authorImages: [authorImage1, authorImage2, authorImage3],
     moreLink: {
-      text: "More",
+      text: "Contact Us" , href: "contact",
       href: "contact",
       icon: "fas fa-arrow-right",
     },
-    customerText: `Over 29,000 customers trust our services.`,
-    customerLink: { text: "Let’s Get Started", href: "contact" },
+    customerText: '',
+    customerLink: '',
   },
   finalParagraph: `We pride ourselves on delivering innovative software solutions that meet the complex challenges of modern businesses. Whether you're looking to optimize your operations, improve customer engagement, or enhance employee management, we have the expertise to help you succeed.`,
 };

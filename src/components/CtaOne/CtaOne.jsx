@@ -51,9 +51,9 @@ const CtaOne = ({ rtl, page }) => {
                                 <Image src={author2} alt="tolak" />
                                 <Image src={author3} alt="tolak" /> */}
 
-                                <Link className="cta-one__author__rm" href={href}>More <span className="fas fa-arrow-right"></span></Link>
+                                <Link className="cta-one__author__rm" href={href}>Contact Us<span className="fas fa-arrow-right"></span></Link>
                             </div>
-                            <p className="cta-one__content__text">{conText} <Link href={href}>{conLinkText}</Link></p>
+                            {/* <p className="cta-one__content__text">{conText} <Link href={href}>{conLinkText}</Link></p> */}
                         </div>
                     </Col>
                 </Row>

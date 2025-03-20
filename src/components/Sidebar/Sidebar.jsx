@@ -63,7 +63,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faFacebookF} />
             <span className="sr-only">Facebook</span>
           </Link>
-          <Link href="https://www.instagram.com/AppXperts.solutions/" target="_blank">
+          <Link href="https://www.instagram.com/Appxperts.solutions/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
             <span className="sr-only">Instagram</span>
           </Link>
@@ -71,7 +71,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faWhatsapp} />
             <span className="sr-only">WhatsApp</span>
           </Link>
-          <Link href="https://www.linkedin.com/company/AppXperts-enterprise-solutions/" target="_blank">
+          <Link href="https://www.linkedin.com/company/Appxperts-enterprise-solutions/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />
             <span className="sr-only">LinkedIn</span>
           </Link>

@@ -19,7 +19,7 @@ const megamenuData = {
 
             href: "/AppXperts",
             btns: [
-                { id: 1, name: "Multi Page", href: "/AppXperts" },
+                { id: 1, name: "Multi Page", href: "/Appxperts" },
                 { id: 2, name: "One Page", href: "AppXperts-one" },
                 { id: 3, name: "Dark Page", href: "AppXperts-dark" }
 

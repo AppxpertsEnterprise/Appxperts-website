@@ -15,7 +15,7 @@ const testimonialsOnePageData = {
                    image: image1,
                    icon: "icofont-quote-left",
                    content: "Many designers listen but do not understand. AppXperts' staff listens to the organization's heartbeat and designs to the highest quality. We have worked with Logo Design.",
-                   name: "MINDDATE",
+                   name: "MINDGATE",
                    designation: "Founder",
                    rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star","icofont-star"]
                },

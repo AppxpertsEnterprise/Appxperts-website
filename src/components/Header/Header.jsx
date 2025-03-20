@@ -54,20 +54,21 @@ const Header = ({ dark, rtl }) => {
       className={`main-header sticky-header sticky-header--normal ${
         scrollToTop ? "active" : ""
       }`}
-    > 
+    >
       <Container fluid>
         <div className="main-header__inner">
           {/* Logo Section */}
           <div className="main-header__logo">
-            <Link href="/AppXperts" target="_blank" rel="noopener noreferrer">
-              <Image
-                src={dark ? logo_light : rtl ? logo_rtl : main_logo}
-                alt="AppXperts"
-                width={185}
-                height={50}
-                style={{ height: "auto", paddingBottom: `${paddingBottom}px` }}
-              />
-            </Link>
+        <Link href="/Appxperts">
+                    <Image
+                      src={dark ? logo_light : rtl ? logo_rtl : main_logo}
+                      alt="AppXperts"
+                      width={185}
+                      height={50}
+                      style={{ height: "auto", paddingBottom: `${paddingBottom}px` }}
+                    />
+                  </Link>
+
           </div>
 
           {/* Navigation Menu */}
@@ -78,17 +79,13 @@ const Header = ({ dark, rtl }) => {
                 <li key={item.id}>
                   <NavItems
                     item={item}
-                    onClick={() =>
-                      window.open(item.href, "_blank", "noopener,noreferrer")
-                    }
+                    onClick={() => window.open(item.href, "_blank")}
                     style={{ cursor: "pointer" }}
                   />
                 </li>
               ))}
               <li className="dot"></li>
             </ul>
-
-           
           </nav>
 
           {/* Right Section */}
@@ -102,45 +99,30 @@ const Header = ({ dark, rtl }) => {
               <span></span>
             </button>
 
-            {/* <button className="main-header__toggler" onClick={toggleSidebar}>
+            <Link
+              href="/packages"
+              className="tolak-btn main-header__btn"
+              style={{
+                display: "inline-block",
+                padding: "12px 30px",
+                borderRadius: "50px",
+                backgroundColor: "#007bff",
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "16px",
+                border: "none",
+                cursor: "pointer",
+                transition: "all 0.3s ease-in-out",
+                textAlign: "center",
+                textDecoration: "none",
+                outline: "none",
+                marginTop: "40px",
+              }}
+            >
+              <b>Discover More</b>
               <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button> */}
-<Link 
-  href="/packages" 
-  className="tolak-btn main-header__btn" 
-  style={{
-    display: "inline-block",
-    padding: "12px 30px",
-    borderRadius: "50px",
-    backgroundColor: "#007bff",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "16px",
-    border: "none",
-    cursor: "pointer",
-    transition: "all 0.3s ease-in-out",
-    textAlign: "center",
-    textDecoration: "none",
-    outline: "none",
-      marginTop: "40px"
-  }}
->
-  <b>Discover More</b>
-  <span></span>
-</Link>
-
-
-
+            </Link>
           </div>
-
         </div>
       </Container>
     </header>

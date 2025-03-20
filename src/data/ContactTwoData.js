@@ -33,7 +33,7 @@ const contactTwoData = {
     {
       id: 3,
       icon: "icon-pin",
-      title: "LOCATION",
+      title: "Location",
       text: [
         {
           name: "India",
@@ -47,6 +47,10 @@ const contactTwoData = {
           name: "Singapore",
           link: "https://www.google.com/maps",
         },
+        {
+          name: "USA",
+          link: "https://www.google.com/maps",
+        }
       ],
     },
   ],

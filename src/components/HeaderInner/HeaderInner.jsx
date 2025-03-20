@@ -59,7 +59,7 @@ const Header = ({ dark, rtl }) => {
         <div className="main-header__inner">
           {/* Logo Section */}
           <div className="main-header__logo">
-            <Link href="/AppXperts" target="_blank" rel="noopener noreferrer">
+            <Link href="/Appxperts" target="_blank" rel="noopener noreferrer">
               <Image
                 src={dark ? logo_light : rtl ? logo_rtl : main_logo}
                 alt="AppXperts"

@@ -1,4 +1,9 @@
 {
   "node": {},
+<<<<<<< Updated upstream
   "edge": {}
+=======
+  "edge": {},
+  "encryptionKey": "DQ7IfkFyExOu5rayt73hQCjSKq0oMaFZS5n6hci40Zg="
+>>>>>>> Stashed changes
 }

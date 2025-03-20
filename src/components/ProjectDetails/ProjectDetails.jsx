@@ -83,9 +83,9 @@ const ProjectDetails = () => {
               </div>
               <p className='project-details__customer__text'>
                 {customerSection.customerText}
-                <a href={customerSection.customerLink.href}>
+                {/* <a href={customerSection.customerLink.href}>
                   ({customerSection.customerLink.text})
-                </a>
+                </a> */}
               </p>
             </div>
           </Col>

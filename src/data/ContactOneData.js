@@ -25,7 +25,7 @@ const contactOneData = {
     imageTwo,
     tagLine: "Get In Contact",
     title: "Get free Business touch Customers me.",
-    text: "Business tailored it design, management & support services \n business agency elit, sed do eiusmod tempor.",
+    text: "Tailored IT design, management, and support services for your business. \n Elevate your agency with expert solutions and seamless integration.",
 
 
 

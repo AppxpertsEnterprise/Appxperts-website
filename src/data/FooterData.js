@@ -29,8 +29,8 @@ import { faPhone, faMapMarkerAlt, faEnvelope } from "@fortawesome/free-solid-svg
 // Social Media Links
 const widgetSocial = [
   { id: 1, icon: faFacebookF, href: "https://www.facebook.com/AppXes", title: "Facebook" },
-  { id: 2, icon: faInstagram, href: "https://www.instagram.com/AppXperts.solutions/", title: "Instagram" },
-  { id: 3, icon: faLinkedin, href: "https://www.linkedin.com/company/AppXperts-enterprise-solutions/", title: "LinkedIn" },
+  { id: 2, icon: faInstagram, href: "https://www.instagram.com/Appxperts.solutions/", title: "Instagram" },
+  { id: 3, icon: faLinkedin, href: "https://www.linkedin.com/company/Appxperts-enterprise-solutions/", title: "LinkedIn" },
   { id: 4, icon: faWhatsapp, href: "https://wa.me/+918825528905", title: "WhatsApp" },
   { id: 5, icon: faEnvelope, href: "mailto:info@appxes.com", title: "Mail" },
 ];
