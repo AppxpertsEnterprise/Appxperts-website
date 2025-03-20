@@ -29,8 +29,8 @@ import { faPhone, faMapMarkerAlt, faEnvelope } from "@fortawesome/free-solid-svg
 // Social Media Links
 const widgetSocial = [
   { id: 1, icon: faFacebookF, href: "https://www.facebook.com/AppXes", title: "Facebook" },
-  { id: 2, icon: faInstagram, href: "https://www.instagram.com/appxperts.solutions/", title: "Instagram" },
-  { id: 3, icon: faLinkedin, href: "https://www.linkedin.com/company/appxperts-enterprise-solutions/", title: "LinkedIn" },
+  { id: 2, icon: faInstagram, href: "https://www.instagram.com/AppXperts.solutions/", title: "Instagram" },
+  { id: 3, icon: faLinkedin, href: "https://www.linkedin.com/company/AppXperts-enterprise-solutions/", title: "LinkedIn" },
   { id: 4, icon: faWhatsapp, href: "https://wa.me/+918825528905", title: "WhatsApp" },
   { id: 5, icon: faEnvelope, href: "mailto:info@appxes.com", title: "Mail" },
 ];
@@ -68,7 +68,7 @@ const footerData = {
   posts,
   postsSix,
   aboutTwoText: "We are a cutting-edge software solutions provider, delivering high-quality products with a focus on innovation and client satisfaction.",
-  widgetText: "Appxperts offers industry-leading software solutions, specializing in web and mobile development, cloud services, and enterprise solutions.",
+  widgetText: "AppXperts offers industry-leading software solutions, specializing in web and mobile development, cloud services, and enterprise solutions.",
 
   // Widget Info (Contact, Location)
   widgetInfo: {

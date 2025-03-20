@@ -36,13 +36,13 @@ const funFactOneData = {
     {
       id: 1,
 
-      header: 'Why Choose Appxperts for Software Solutions?',
+      header: 'Why Choose AppXperts for Software Solutions?',
       content: "We provide cutting-edge, scalable, and tailor-made software solutions that enhance operational efficiency and drive business success."
     },
     {
       id: 2,
       header: 'Which Industries Do We Serve?',
-      content: "Appxperts specializes in solutions for diverse industries, including retail, healthcare, education, finance, and enterprise-level businesses."
+      content: "AppXperts specializes in solutions for diverse industries, including retail, healthcare, education, finance, and enterprise-level businesses."
     },
     {
       id: 3,

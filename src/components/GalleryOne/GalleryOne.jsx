@@ -78,7 +78,7 @@ const GalleryOne = () => {
 
 <div className={styles.galleryScrollContainer}>
     {displayedImages.map(({ id, src, alt }, index) => (
-        <div key={id} className={styles.galleryItem} onClick={() => handleClick(src, index)}>
+        <div key={id} className={styles.galleryItem}>
             <Image
                 src={src}
                 alt={alt}

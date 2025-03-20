@@ -91,7 +91,7 @@ export const blogDetailsData = {
       social: [
         {
           name: "Instagram",
-          href: "https://instagram.com/appxperts.solutions",
+          href: "https://instagram.com/AppXperts.solutions",
           icon: "fab fa-instagram",
         },
         {
@@ -101,7 +101,7 @@ export const blogDetailsData = {
         },
         {
           name: "LinkedIn",
-          href: "https://linkedin.com/company/appxperts-enterprise-solutions/",
+          href: "https://linkedin.com/company/AppXperts-enterprise-solutions/",
           icon: "fab fa-linkedin",
         },
         {

@@ -25,7 +25,7 @@ import Footer from "@/components/Footer/Footer";
 import HeaderCloned from "@/components/Header/HeaderCloned";
 
 export const metadata =  {
-    title: "Appxperts Enterprise Solution.",
+    title: "AppXperts Enterprise Solution.",
    
   };
 

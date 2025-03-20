@@ -21,7 +21,7 @@ import TopbarTwo from "@/components/TopbarTwo/TopbarTwo";
 import WorkProcessOne from "@/components/WorkProcessOne/WorkProcessOne";
 
 export const metadata = {
-    title: "Appxperts Enterprise Solution.",
+    title: "AppXperts Enterprise Solution.",
    
   };
 const Page = () => {

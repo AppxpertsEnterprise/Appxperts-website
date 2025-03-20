@@ -9,7 +9,7 @@ const featureOneData = {
             id: 1,
             icon: "icon-social-care",
             title: "Confidentiality",
-            text: "Appxperts takes confidentialy seriously and always makes sure to protect sensitive information.",
+            text: "AppXperts takes confidentialy seriously and always makes sure to protect sensitive information.",
             shape: shape1
 
         },

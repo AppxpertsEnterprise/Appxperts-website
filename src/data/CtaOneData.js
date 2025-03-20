@@ -18,7 +18,7 @@ const ctaOneData = {
     icon: "icon-best-price",
     title: "Solution System Design",
 
-    text: "At Appxperts, we engineer scalable, efficient, and user-centric software solutions. Our system design approach emphasizes innovation.",
+    text: "At AppXperts, we engineer scalable, efficient, and user-centric software solutions. Our system design approach emphasizes innovation.",
 
     conLinkText: "( Let’s Started )",
     href: "contact"

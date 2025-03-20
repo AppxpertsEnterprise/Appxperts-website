@@ -22,7 +22,7 @@ import HeaderCloned from "@/components/Header/HeaderCloned";
 
 
 export const metadata = {
-  title: "Appxperts Enterprise Solution",
+  title: "AppXperts Enterprise Solution",
   description:
     "AppXperts is a one-stop solution offering a wide range of services, including Software Development, Digital Marketing, Branding, and Resource Outsourcing.",
 };

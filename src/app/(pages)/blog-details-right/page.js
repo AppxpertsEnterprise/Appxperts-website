@@ -10,7 +10,7 @@ import React from 'react';
 
 
 export const metadata ={
-    title: "Appxperts Enterprise solution.",
+    title: "AppXperts Enterprise solution.",
    
 };
 

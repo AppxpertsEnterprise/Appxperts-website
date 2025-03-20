@@ -9,7 +9,7 @@ import ServiceDetails from '@/components/ServiceDetails/ServiceDetails';
 import React from 'react';
 
 export const metadata = {
-    title: "Appxperts Enterprise Solution.",
+    title: "AppXperts Enterprise Solution.",
    
   };
   

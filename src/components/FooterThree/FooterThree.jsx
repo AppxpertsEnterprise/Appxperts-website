@@ -32,7 +32,7 @@ const Footer = () => {
                     <Col md={6} lg={4}>
                         <div className="footer-widget footer-widget--about">
                             <Link href="/" className="footer-widget__logo">
-                                <Image src={logo} width={160} height={160} alt="Appxperts Logo" />
+                                <Image src={logo} width={160} height={160} alt="AppXperts Logo" />
                             </Link>
                             <ul className="footer-widget__info">
                                 {/* Locations */}
@@ -63,7 +63,7 @@ const Footer = () => {
                             </div>
                             {/* Footer About Image */}
                             <div className="footer-widget__image">
-                                <Image src={footerAbout} alt="About Appxperts" />
+                                <Image src={footerAbout} alt="About AppXperts" />
                             </div>
                         </div>
                     </Col>
@@ -96,12 +96,12 @@ const Footer = () => {
                         </div>
                     </Col>
 
-                    {/* About Appxperts */}
+                    {/* About AppXperts */}
                     <Col md={6} lg={4}>
-                        <div className="footer-widget footer-widget--about-appxperts">
-                            <h2 className="footer-widget__title">About Appxperts</h2>
+                        <div className="footer-widget footer-widget--about-AppXperts">
+                            <h2 className="footer-widget__title">About AppXperts</h2>
                             <p>
-                                Appxperts is a leading software development company dedicated to delivering 
+                                AppXperts is a leading software development company dedicated to delivering 
                                 innovative solutions for businesses of all sizes. Our expertise spans web and 
                                 mobile applications, cloud computing, AI, and enterprise software solutions. 
                                 We prioritize client satisfaction and cutting-edge technology to drive success.
@@ -124,7 +124,7 @@ const Footer = () => {
                     <Row className="align-items-center">
                         <Col md={6} className="text-center text-md-start">
                             <p className="main-footer__copyright">
-                                &copy; {year} Appxperts Enterprise Solutions. All Rights Reserved.
+                                &copy; {year} AppXperts Enterprise Solutions. All Rights Reserved.
                             </p>
                         </Col>
                         <Col md={6} className="text-center text-md-end">

@@ -17,9 +17,9 @@ export const demoOneData = [
         alt: "Home Page 01",
         title: "Home Page 01",
         buttons: [
-            { href: "Appxperts", label: "Multi Page" },
-            { href: "Appxperts-one", label: "One Page" },
-            { href: "Appxperts-dark", label: "Dark Page" },
+            { href: "AppXperts", label: "Multi Page" },
+            { href: "AppXperts-one", label: "One Page" },
+            { href: "AppXperts-dark", label: "Dark Page" },
         ],
     },
     {

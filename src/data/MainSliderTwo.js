@@ -18,7 +18,7 @@ const mainSliderTwoData = {
 
     ],
     socials: [
-       { id: 1, icon: faInstagram, link: "https://instagram.com/appxperts.solution", name: "Instagram" },
+       { id: 1, icon: faInstagram, link: "https://instagram.com/AppXperts.solution", name: "Instagram" },
                    { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
                    { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
     ],

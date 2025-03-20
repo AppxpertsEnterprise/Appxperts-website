@@ -13,7 +13,7 @@ const testimonialsOneData = {
             id: 1,
             image: image1,
             icon: "icofont-quote-left",
-            content: "Many designers listen but do not understand. Appxperts' staff listens to the organization's heartbeat and designs to the highest quality. We have worked with Logo Design.",
+            content: "Many designers listen but do not understand. AppXperts' staff listens to the organization's heartbeat and designs to the highest quality. We have worked with Logo Design.",
             name: "Salsabeel",
 
             designation: "Founder", 
@@ -33,7 +33,7 @@ const testimonialsOneData = {
             id: 3,
             image: image3,
             icon: "icofont-quote-left",
-            content: "We appreciate their flexibility and customer-centric approach We have got more followers and increased brand awareness in the market since working with Appxperts.",
+            content: "We appreciate their flexibility and customer-centric approach We have got more followers and increased brand awareness in the market since working with AppXperts.",
             name: "Bro Go Burgers",
             designation: "Co Founder",
             rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star"]
@@ -51,7 +51,7 @@ const testimonialsOneData = {
             id: 5,
             image: image5,
             icon: "icofont-quote-left",
-            content: "We are really satisfied with the website that Appxperts designed for us. It is looking good, clean, easy to navigate, and responsive - everything we asked for.",
+            content: "We are really satisfied with the website that AppXperts designed for us. It is looking good, clean, easy to navigate, and responsive - everything we asked for.",
             name: "TSL Nutraceuticals",
             designation: "Reviwers",
             rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star"]
@@ -60,7 +60,7 @@ const testimonialsOneData = {
             id: 6,
             image: image2,
             icon: "icofont-quote-left",
-            content: "Appxperts is the best Instagram marketing service I've ever used. They are experts at creating engaging content and hastags that gets results. My business has grown exponentially since I started working with Appxperts. ",
+            content: "AppXperts is the best Instagram marketing service I've ever used. They are experts at creating engaging content and hastags that gets results. My business has grown exponentially since I started working with AppXperts. ",
             name: "Toni & Guy",
             designation: "Co Founder",
             rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star"]
@@ -69,7 +69,7 @@ const testimonialsOneData = {
             id: 7,
             image: image3,
             icon: "icofont-quote-left",
-            content: "Appxperts has been a game-changer for my business. I've been working with them for a few months now on my social media marketing, and the results have been incredible.",
+            content: "AppXperts has been a game-changer for my business. I've been working with them for a few months now on my social media marketing, and the results have been incredible.",
             name: "Iceland",
             designation: "Manager",
             rating: ["icofont-star", "icofont-star", "icofont-star", "icofont-star", "icofont-star"]

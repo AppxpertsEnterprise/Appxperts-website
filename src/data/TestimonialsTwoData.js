@@ -16,7 +16,7 @@ const testimonialsTwoData = {
       quotoBg,
 
       content:
-        "Appxperts has been a game-changer for my business. I've been working with them for a few months now on my social media marketing, and the results have been incredible.",
+        "AppXperts has been a game-changer for my business. I've been working with them for a few months now on my social media marketing, and the results have been incredible.",
       name: "Iceland",
       designation: "Founder",
       rating: [
@@ -32,7 +32,7 @@ const testimonialsTwoData = {
       image: image5,
       quotoBg,
       content:
-        "We highly recommend Appxperts to anyone looking for help with their social media marketing. The team is extremely knowledgeable and helped me grow my online presence significantly. ",
+        "We highly recommend AppXperts to anyone looking for help with their social media marketing. The team is extremely knowledgeable and helped me grow my online presence significantly. ",
       name: "Krishna sweets & Restaurant",
       designation: "Manager",
       rating: [

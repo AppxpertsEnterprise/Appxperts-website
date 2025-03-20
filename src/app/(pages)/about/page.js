@@ -15,7 +15,7 @@ import TestimonialsTwo from '@/components/TestimonialsTwo/TestimonialsTwo';
 import React from 'react';
 
 export const metadata = {
-    title: "Appxperts Enterprise Solution.",
+    title: "AppXperts Enterprise Solution.",
     // description:
     //     "Tolak is a modern NextJS Template for Bu, It Solution, Corporate, Agency, Portfolio shops. The template perfectly fits Beauty Spa, Salon, and Wellness Treatments websites and businesses.",
 };
