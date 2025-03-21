@@ -69,8 +69,8 @@
     "@babel/preset-react": "^7.26.3",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
-    "eslint": "^9.22.0",
-    "eslint-config-next": "14.2.5",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.2.3",
     "postcss-nested": "^7.0.2"
   },
   "overrides": {
