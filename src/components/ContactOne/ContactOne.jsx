@@ -41,8 +41,6 @@ const ContactOne = ({ rtl }) => {
       return;
     }
   
-    const data = { name, email, message };
-    setLoading(true);
   
     const data = { name, email, message };
     setLoading(true);
