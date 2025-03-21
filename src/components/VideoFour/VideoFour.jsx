@@ -1,10 +1,11 @@
 'use client'
 import React, { Fragment, useState } from 'react';
+import dynamic from 'next/dynamic';
 import JarallaxImage from '../Jarallax/JarallaxImage';
 import VideoModal from '../VideoModal/VideoModal';
 import Link from 'next/link';
 import { videoFourData } from '@/data/VideoFourData';
-import dynamic from 'next/dynamic';
+
 import { Parallax } from 'react-parallax';
 const Jarallax = dynamic(() => import("@/components/Jarallax/Jarallax"), {
     ssr: false,
