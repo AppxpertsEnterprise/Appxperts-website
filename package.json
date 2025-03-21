@@ -72,5 +72,11 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss-nested": "^7.0.2"
+  },
+  "overrides": {
+    "react-masonry-component": {
+      "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0 || ^17.0.0 || ^18.0.0"
+    }
   }
+
 }
