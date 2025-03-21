@@ -20,7 +20,7 @@ const HeaderFourSingle = () => {
             <div className='container-fluid'>
                 <div className='main-header-four__inner'>
                     <div className='main-header-four__logo'>
-                        <Link href='/AppXperts'>
+                        <Link href='/Appxperts'>
                             <Image
                                 src={main_logo}
                                 alt='Tolak HTML'

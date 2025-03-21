@@ -41,7 +41,6 @@ const ContactOne = ({ rtl }) => {
       return;
     }
   
-  
     const data = { name, email, message };
     setLoading(true);
   
@@ -64,10 +63,10 @@ const ContactOne = ({ rtl }) => {
       console.log("Response Data:", result);
   
       if (!response.ok) {
-        throw new Error(result.error || "Failed to submit form");
+        throw new Error(result.error || "Failed to submit form",{ duration: 3000 });
       }
   
-      toast.success("Message sent successfully!");
+      toast.success("Message sent successfully!" , {duration:3000});
       e.target.reset(); // ✅ Reset the form only if submission is successful
   
     } catch (error) {

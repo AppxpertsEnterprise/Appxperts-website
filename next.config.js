@@ -1,4 +1,3 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
@@ -6,14 +5,11 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/AppXperts',
-        permanent: true, // Set to false for temporary redirection
+        destination: '/Appxperts',
+        permanent: true,
       },
     ];
   },
 };
 
-
-
 module.exports = nextConfig;
-

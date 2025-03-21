@@ -17,7 +17,7 @@ const megamenuData = {
             title: "Home Page 01",
             image: homeOne,
 
-            href: "/AppXperts",
+            href: "/Appxperts",
             btns: [
                 { id: 1, name: "Multi Page", href: "/Appxperts" },
                 { id: 2, name: "One Page", href: "AppXperts-one" },

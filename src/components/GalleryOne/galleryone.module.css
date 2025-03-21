@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
   padding: 20px 0;
   gap: 10px;
-
+  
   /* Hide scrollbar */
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -18,48 +18,15 @@
 .galleryItem {
   flex: 0 0 auto;
   display: inline-block;
-  width: 220px; /* Reduced width */
+  width: 220px;
   margin-right: 10px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .galleryItem:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.trendingImage {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 3px solid #ffffff; /* Perfect border color */
-  transition: border-color 0.3s ease-in-out;
-}
-
-.trendingImage:hover {
-  border-color: #000000; /* Border color changes on hover */
-}
-
-
-.loadMoreBtn {
-  display: inline-block;
-  background-color: #0288D1;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 40px;
-  border: none;
-  border-radius: 50px; /* Oval shape */
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.loadMoreBtn:hover {
-  background-color: #01579B;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

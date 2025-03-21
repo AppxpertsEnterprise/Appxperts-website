@@ -57,10 +57,10 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.error || "Subscription failed.");
+        throw new Error(result.error || "Subscription failed.",{ duration: 3000 });
       }
 
-      toast.success(result.message || "Subscription successful! Thank you.");
+      toast.success(result.message || "Subscription successful! Thank you.",{ duration: 3000 });
       setEmail("");
     } catch (error) {
       console.error("Subscription error:", error);
@@ -98,9 +98,9 @@ const NewsLetterForm = ({ mail, ctaThree }) => {
         <span className="sr-only">Subscribe</span>
       </button>
 
-      <div className="mc-form__response">
+      {/* <div className="mc-form__response">
         {isSubmitting && <div>Sending...</div>}
-      </div>
+      </div> */}
     </div>
   );
 };

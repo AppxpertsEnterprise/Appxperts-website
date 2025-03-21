@@ -6,6 +6,7 @@ import post1 from "@/assets/images/blog/lp-1-3.jpg";
 import post2 from "@/assets/images/blog/lp-1-4.jpg";
 import post3 from "@/assets/images/blog/lp-1-5.jpg";
 
+
 const sidebarData = {
   categories: [
     { href: "/blog-details-right", text: "Business", count: 8 },

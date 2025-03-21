@@ -8,7 +8,7 @@ import image6 from '@/assets/images/resources/testi-1-6.jpg'
 const testimonialsOnePageData = {
     bg,
     tagLine: "Our testimonial say",
-    title: "What Out Clients Says Company",
+    title: "What Our Clients Says",
     items: [
         {
                    id: 1,
