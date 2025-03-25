@@ -73,19 +73,19 @@ const Header = ({ dark, rtl }) => {
 
           {/* Navigation Menu */}
           <nav className="main-header__nav main-menu">
-            <ul className="main-menu__list">
-              <MegaMenu pageTitle="home" />
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <NavItems
-                    item={item}
-                    onClick={() => window.open(item.href, "_blank")}
-                    style={{ cursor: "pointer" }}
-                  />
-                </li>
-              ))}
-              <li className="dot"></li>
-            </ul>
+          <ul className="main-menu__list">
+  <MegaMenu pageTitle="home" />
+  {navItems.map((item) => (
+    <NavItems
+      key={item.id}
+      item={item}
+      onClick={() => window.open(item.href, "_blank")}
+      style={{ cursor: "pointer" }}
+    />
+  ))}
+  <li className="dot"></li>
+</ul>
+
           </nav>
 
           {/* Right Section */}
