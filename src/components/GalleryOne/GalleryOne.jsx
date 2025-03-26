@@ -1,12 +1,15 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Form, InputGroup } from 'react-bootstrap';
+import Masonry from "react-masonry-css";
 import Image from 'next/image';
 import GalleryModal from '../GalleryModal/GalleryModal';
 import { galleryData } from '@/data/galleryData';
 import testimonialsOnePageData from '@/data/TestimonialsOnePageDtata';
 import styles from './galleryone.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const { tagLine, title, items } = testimonialsOnePageData;
 
@@ -16,31 +19,6 @@ const GalleryOne = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [displayedImages, setDisplayedImages] = useState(galleryData?.slice(0, 9) || []);
     const [hasMore, setHasMore] = useState(true);
-
-    const galleryRef = useRef(null);
-    const scrollInterval = useRef(null);
-
-    useEffect(() => {
-        startScrolling();
-        return () => stopScrolling(); // Cleanup on unmount
-    }, []);
-
-    const startScrolling = () => {
-        if (galleryRef.current) {
-            stopScrolling(); // Clear existing interval
-            scrollInterval.current = setInterval(() => {
-                if (galleryRef.current) {
-                    galleryRef.current.scrollLeft += 1;
-                }
-            }, 20);
-        }
-    };
-
-    const stopScrolling = () => {
-        if (scrollInterval.current) {
-            clearInterval(scrollInterval.current);
-        }
-    };
 
     const handleClick = (src, index) => {
         setCurrentIndex(index);
@@ -63,6 +41,17 @@ const GalleryOne = () => {
         }
     };
 
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    useEffect(() => {
+        const filteredImages = galleryData?.filter(({ alt }) =>
+            alt.toLowerCase().includes(searchTerm.toLowerCase())
+        ) || [];
+        setDisplayedImages(filteredImages.slice(0, displayedImages.length));
+    }, [searchTerm]);
+
     const loadMoreImages = () => {
         const filteredImages = galleryData?.filter(({ alt }) =>
             alt.toLowerCase().includes(searchTerm.toLowerCase())
@@ -78,32 +67,40 @@ const GalleryOne = () => {
     return (
         <section className={styles.galleryOne}>
             <Container fluid>
-                <div 
-                    className={styles.galleryScrollContainer} 
-                    ref={galleryRef} 
-                    onMouseEnter={stopScrolling} 
-                    onMouseLeave={startScrolling}
-                >
-                    {displayedImages.map(({ id, src, alt }, index) => (
-                        <div key={id} className={styles.galleryItem}>
-                            <Image
-                                src={src}
-                                alt={alt}
-                                width={250}  // Increased width
-                                height={180} // Increased height
-                                className={styles.trendingImage}
-                            />
-                        </div>
-                    ))}
-                </div>
+                {/* <InputGroup className="mb-4">
+                    <Form.Control
+                        type="text"
+                        placeholder="Search images..."
+                        value={searchTerm}
+                        onChange={handleSearch}
+                    />
+                </InputGroup> */}
 
-                {hasMore && (
-                    <div className="text-center mt-4">
-                        <button className={styles.loadMoreBtn} onClick={loadMoreImages}>
-                            Load More
-                        </button>
-                    </div>
-                )}
+<div className={styles.galleryScrollContainer}>
+    {displayedImages.map(({ id, src, alt }, index) => (
+        <div key={id} className={styles.galleryItem}>
+            <Image
+                src={src}
+                alt={alt}
+                width={220}  // Adjusted width
+                height={150} // Adjusted height
+                className={styles.trendingImage}
+            />
+        </div>
+    ))}
+</div>
+
+
+
+
+{hasMore && (
+    <div className="text-center mt-4">
+        <button className={styles.loadMoreBtn} onClick={loadMoreImages}>
+            Load More
+        </button>
+    </div>
+)}
+
             </Container>
 
             {clickedImg && (

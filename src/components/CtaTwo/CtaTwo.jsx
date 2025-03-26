@@ -55,7 +55,7 @@ const CtaTwo = ({ two, rtl }) => {
                     </Row>
                 </div>
                 {/* Oval-shaped "Discover More" Button */}
-                {/* <div style={{ textAlign: "center", marginTop: "-30px" }}> 
+                <div style={{ textAlign: "center", marginTop: "-30px" }}> 
                     <Link 
                         href="/packages" 
                         className="tolak-btn main-header__btn" 
@@ -78,7 +78,7 @@ const CtaTwo = ({ two, rtl }) => {
                         <b>Discover More</b>
                         <span></span>
                     </Link>
-                </div> */}
+                </div>
             </Container>
         </section>
     );

@@ -5,18 +5,6 @@
       "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
     ]
   },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
-    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
-    "files": [
-      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js"
-    ]
-  },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
-    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error",
-    "files": [
-      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
-    ]
-  },
   "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react": {
     "id": "components\\BlogOne\\BlogOne.jsx -> tiny-slider-react",
     "files": [
@@ -41,6 +29,12 @@
       "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
     ]
   },
+  "components\\ServiceTwo\\ServiceTwo.jsx -> tiny-slider-react": {
+    "id": "components\\ServiceTwo\\ServiceTwo.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
   "components\\SlideText\\SlideText.jsx -> @/components/Jarallax/Jarallax": {
     "id": "components\\SlideText\\SlideText.jsx -> @/components/Jarallax/Jarallax",
     "files": [
@@ -50,6 +44,19 @@
   },
   "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react": {
     "id": "components\\TeamOne\\TeamOne.jsx -> tiny-slider-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
+    ]
+  },
+  "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> @/components/Jarallax/Jarallax": {
+    "id": "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> @/components/Jarallax/Jarallax",
+    "files": [
+      "static/css/_app-pages-browser_src_components_Jarallax_Jarallax_js.css",
+      "static/chunks/_app-pages-browser_src_components_Jarallax_Jarallax_js.js"
+    ]
+  },
+  "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> tiny-slider-react": {
+    "id": "components\\TestimonialsTwo\\TestimonialsTwo.jsx -> tiny-slider-react",
     "files": [
       "static/chunks/_app-pages-browser_node_modules_tiny-slider-react_build_index_js.js"
     ]

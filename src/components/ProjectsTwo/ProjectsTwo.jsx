@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Masonry from "react-masonry-component";
+import Masonry from "react-masonry-css";
 import { Col, Container } from "react-bootstrap";
 import projectsData from "@/data/ProjectTwoData";
 import Image from "next/image";
@@ -62,7 +62,7 @@ const ProjectTwo = () => {
                   {/* ✅ Removed Border, Added Smooth Box Shadow */}
                   <Image
   src={project.image}
-  alt={project.title}
+  alt={project.title || "Project Image"}
   style={{
     paddingLeft: "20px",
     borderRadius: "12px", /* Smooth rounded corners */

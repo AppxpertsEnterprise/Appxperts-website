@@ -3,7 +3,7 @@ import { filterCategories, galleryFilterData } from '@/data/GalleryFilterData';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { Col, Container } from 'react-bootstrap';
-import Masonry from "react-masonry-component";
+import Masonry from "react-masonry-css";
 
 import GalleryModal from '../GalleryModal/GalleryModal';
 const getFilteredProjects = (filterData) =>

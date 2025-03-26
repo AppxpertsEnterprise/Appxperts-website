@@ -3,9 +3,8 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
 import faqTwoData from '@/data/FaqTwoData';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import JarallaxImage from '../Jarallax/JarallaxImage';
-
+import dynamic from 'next/dynamic';
 const Jarallax = dynamic(() => import("@/components/Jarallax/Jarallax"), {
     ssr: false,
 });

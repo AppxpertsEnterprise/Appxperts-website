@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
 
 const ScrollTriggerCount = ({ count }) => {
@@ -9,11 +9,9 @@ const ScrollTriggerCount = ({ count }) => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting) {
-                    setTrigger(true);
-                }
+                setTrigger(entry.isIntersecting);
             },
-            { threshold: 0.5 } // Trigger when 50% of element is in view
+            { threshold: 0.5 } // Adjust threshold as needed
         );
 
         if (ref.current) {
@@ -21,9 +19,7 @@ const ScrollTriggerCount = ({ count }) => {
         }
 
         return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
+            if (ref.current) observer.unobserve(ref.current);
         };
     }, []);
 

@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
-
-// import WOW from 'wowjs';
 import CustomCursor from "../CustomCursor/CustomCursor";
 import Preloader from "../Preloader/Preloader";
 import Search from "../Search/Search";
@@ -12,17 +10,18 @@ import ScrollTop from "../ScrollTop/ScrollTop";
 import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
 
-const Layout = ({ children, pageTitle }) => {
-  const [mounted, setMounted] = useState(false);
-
-
+const Layout = ({ children }) => {
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setIsClient(true); // Ensures the component runs only on the client
+
+    // Initialize AOS on client-side
+    AOS.init();
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
+    if (!isClient) return; // Ensures event listeners run only on the client
 
     const tolakBtns = document.querySelectorAll(".tolak-btn");
 
@@ -57,37 +56,19 @@ const Layout = ({ children, pageTitle }) => {
       btn.addEventListener("mouseout", handleMouseOut);
     });
 
-    // Clean up event listeners on component unmount
     return () => {
       tolakBtns.forEach((btn) => {
         btn.removeEventListener("mouseenter", handleMouseEnter);
         btn.removeEventListener("mouseout", handleMouseOut);
       });
     };
-  }, [mounted]);
-
-
-
-
-  useEffect(() => {
-    if (!mounted) return;
-
-    AOS.init();
-
-
-  }, [mounted]);
-
-  if (!mounted) {
-    return null;
-  }
+  }, [isClient]); // Ensure effect only runs after client is mounted
 
   return (
     <>
-      <CustomCursor />
-      <Preloader />
-      <div className='page-wrapper'>
-        {children}
-      </div>
+      {isClient && <CustomCursor />} {/* Prevents SSR mismatch */}
+      {isClient && <Preloader />}
+      <div className="page-wrapper">{children}</div>
       <MobileNav />
       <Search />
       <Sidebar />

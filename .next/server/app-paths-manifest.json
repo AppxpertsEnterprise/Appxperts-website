@@ -1,6 +1,7 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(pages)/Appxperts/page": "app/(pages)/Appxperts/page.js",
-  "/(pages)/contact/page": "app/(pages)/contact/page.js",
-  "/(pages)/gallery/page": "app/(pages)/gallery/page.js"
+  "/(pages)/business-solution/page": "app/(pages)/business-solution/page.js",
+  "/(pages)/packages/page": "app/(pages)/packages/page.js",
+  "/(pages)/business-growth/page": "app/(pages)/business-growth/page.js",
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/(pages)/Appxperts/page": "app/(pages)/Appxperts/page.js"
 }

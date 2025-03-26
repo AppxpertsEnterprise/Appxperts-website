@@ -52,7 +52,7 @@ const ProjectDetails = () => {
         <Row className='project-details__customer-wrapper'>
           <Col lg={6}>
             <div className='project-details__image-two'>
-              <Image src={additionalImage} alt='Additional' fluid />
+              <Image src={additionalImage} alt='Additional' />
             </div>
           </Col>
           <Col lg={6}>

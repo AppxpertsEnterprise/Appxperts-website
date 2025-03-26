@@ -6,11 +6,11 @@ import React from 'react';
 const NavItems = ({ item }) => {
     const pathname = usePathname();
     const { name, href, subNavItems } = item;
-    const subHref = subNavItems?.map((subItem) => subItem.href);
+    const subHref = subNavItems?.map((item) => item.href);
     const current = pathname === href || subHref?.includes(pathname);
 
     return (
-        <li className={`${subNavItems ? "dropdown" : ""} ${current ? "current" : ""}`}>
+        <li className={`${subNavItems && "dropdown"} ${current ? "current" : ""}`}>
             <Link href={href}>{name}</Link>
 
             {subNavItems && (
@@ -19,11 +19,12 @@ const NavItems = ({ item }) => {
                         <li key={subItem.id}>
                             <Link href={subItem.href}>{subItem.name}</Link>
 
-                            {subItem.subItems && (
-                                <ul className="nested-sub-menu">
-                                    {subItem.subItems.map((nestedItem) => (
-                                        <li key={nestedItem.id}>
-                                            <Link href={nestedItem.href}>{nestedItem.name}</Link>
+                            {/* ✅ Proper nesting: Wrap sub-items inside a <ul> */}
+                            {subItem?.subItems && (
+                                <ul className="sub-sub-menu">
+                                    {subItem?.subItems?.map((subSubItem) => (
+                                        <li key={subSubItem.id}>
+                                            <Link href={subSubItem.href}>{subSubItem.name}</Link>
                                         </li>
                                     ))}
                                 </ul>
