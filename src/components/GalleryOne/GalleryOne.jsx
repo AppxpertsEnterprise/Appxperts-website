@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, InputGroup } from 'react-bootstrap';
-import Masonry from "react-masonry-component";
+import Masonry from "react-masonry-css";
 import Image from 'next/image';
 import GalleryModal from '../GalleryModal/GalleryModal';
 import { galleryData } from '@/data/galleryData';

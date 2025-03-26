@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Masonry from "react-masonry-component";
+import Masonry from "react-masonry-css";
 import { Col, Container } from "react-bootstrap";
 import projectsData from "@/data/ProjectTwoData";
 import Image from "next/image";
