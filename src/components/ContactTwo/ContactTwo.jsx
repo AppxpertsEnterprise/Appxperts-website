@@ -43,7 +43,7 @@ const ContactTwo = ({ contact }) => {
     };
   
     if (!data.name || !data.email || !data.message) {
-      toast.error("All fields are required!", { duration: 3000 }); // 3 sec display
+      toast.error("All fields are required!");
       return;
     }
   
@@ -61,16 +61,15 @@ const ContactTwo = ({ contact }) => {
       }
   
       const result = await response.json();
-      toast.success(result.message || "Message sent successfully!", { duration: 3000 }); // 3 sec display
+      toast.success(result.message || "Message sent successfully!");
   
       // Optionally reset the form
       form.current.reset();
     } catch (error) {
       console.error("Error submitting form:", error);
-      toast.error(error.message || "Something went wrong!", { duration: 3000 }); // 3 sec display
+      toast.error(error.message || "Something went wrong!");
     }
   };
-  
   
 
   return (
@@ -178,15 +177,9 @@ const ContactTwo = ({ contact }) => {
                       <textarea name="message" placeholder="Message"></textarea>
                     </div>
                     <div className="form-one__control form-one__control--full">
-                    <button 
-  type="submit" 
-  className="tolak-btn" 
-  style={{ borderRadius: "50px", padding: "12px 30px" }}
->
-  <b>Send Request</b>
-  <span></span>
-
-
+                      <button type="submit" className="tolak-btn">
+                        <b>Send Request</b>
+                        <span></span>
                       </button>
                     </div>
                   </div>

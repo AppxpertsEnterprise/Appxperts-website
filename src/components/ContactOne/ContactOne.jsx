@@ -63,10 +63,10 @@ const ContactOne = ({ rtl }) => {
       console.log("Response Data:", result);
   
       if (!response.ok) {
-        throw new Error(result.error || "Failed to submit form",{ duration: 3000 });
+        throw new Error(result.error || "Failed to submit form");
       }
   
-      toast.success("Message sent successfully!" , {duration:3000});
+      toast.success("Message sent successfully!");
       e.target.reset(); // ✅ Reset the form only if submission is successful
   
     } catch (error) {

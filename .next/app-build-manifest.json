@@ -12,10 +12,32 @@
       "static/css/app/(pages)/Appxperts/page.css",
       "static/chunks/app/(pages)/Appxperts/page.js"
     ],
-    "/(pages)/contact/page": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
+      "static/css/app/(pages)/about/page.css",
+      "static/chunks/app/(pages)/about/page.js"
+    ],
+    "/(pages)/project/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/project/page.js"
+    ],
+    "/(pages)/project-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/project-details/page.js"
+    ],
+    "/(pages)/business-solution/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/business-solution/page.js"
+    ],
+    "/(pages)/home5-one/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/home5-one/page.css",
+      "static/chunks/app/(pages)/home5-one/page.js"
     ],
     "/(pages)/gallery/page": [
       "static/chunks/webpack.js",
