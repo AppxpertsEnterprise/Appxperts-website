@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import "@fontsource/rubik/latin.css";
 import "@fontsource/raleway/latin.css";
@@ -16,54 +16,42 @@ import "@/assets/vendors/fontawesome/css/all.min.css";
 import "@/assets/vendors/icofont/icofont.min.css";
 import "@/assets/vendors/tolak-icons-two/style.css";
 import ThemeProvider from "@/Provider/ThemeProvider";
-
 import "aos/dist/aos.css";
-
 import "@/assets/css/tolak.css";
 import "@/assets/css/tolak-dark.css";
 import { usePathname } from "next/navigation";
-
-import { useEffect, useState } from "react";
-
-
+import { useMemo } from "react";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const [themeState, setThemeState] = useState("light");
 
-  useEffect(() => {
-
-    if (pathname === "/Appxperts-dark" || pathname === "/home2-dark" || pathname === "/home3-dark" || pathname === "/home4-dark") {
-
-      setThemeState("dark");
-    } else {
-      setThemeState("light");
-    }
+  // Precompute the theme state to avoid mismatches between SSR and CSR
+  const themeState = useMemo(() => {
+    return ["/Appxperts-dark", "/home2-dark", "/home3-dark", "/home4-dark"].includes(pathname)
+      ? "dark"
+      : "light";
   }, [pathname]);
 
+  // Precompute the className to avoid hydration mismatch
+  const computedClassName = useMemo(() => {
+    const homeMap = {
+      "/home5": "home5",
+      "/home5-one": "home5",
+      "/home6": "home6",
+      "/home6-one": "home6",
+      "/home7": "home7",
+      "/home7-one": "home7",
+      "/home-boxed": "boxed-wrapper",
+    };
 
-  // useEffect(() => {
-  //   if (themeState === "dark") {
-  //     import("@/assets/css/tolak-dark.css");
-  //   }
-  // }, [themeState]);
+    return `custom-cursor ${homeMap[pathname] || ""} ${themeState}`;
+  }, [pathname, themeState]);
 
-  // const themes = {
-  //   dark: "/_next/static/css/tolak-dark.css",
-  //   light: "/_next/static/css/tolak.css",
-  // };
   return (
-    <html lang='en'>
-
-      <body className={`custom-cursor ${pathname === "/home5" ? 'home5' : pathname === "/home5-one" ? 'home5' : pathname === "/home6" ? "home6" : pathname === "/home6-one" ? "home6" : pathname === "/home7" ? 'home7' : pathname === "/home7-one" ? 'home7' : pathname === "/home-boxed" ? "boxed-wrapper" : ''} ${themeState}`}>
-
-        {/* <ThemeSwitcherProvider themeMap={themes} defaultTheme={themeState}> */}
-
+    <html lang="en">
+      <body className={computedClassName}>
         <ThemeProvider>{children}</ThemeProvider>
-        {/* </ThemeSwitcherProvider> */}
       </body>
-
-
-    </html >
+    </html>
   );
 }

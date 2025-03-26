@@ -25,11 +25,17 @@ const ctaTwoData = {
             title: "Singapore  +65843993175",
             subHref: "tel"
 
+        },
+        {
+            id: 3,
+            title: "UAE  +971508550443",
+            subHref: "tel"
+
         }
     ],
     contTitle: "Solution Company",
     contText: "We can provide you with a reliable \n Please input an email address",
-    href: "025461556695",
+    href: "+91882552890",
     subHref: "tel"
 
 };

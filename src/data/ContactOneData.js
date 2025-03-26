@@ -11,7 +11,7 @@ const contactOneData = {
     texts: [
         {
             id: 1,
-            title: "+91 8825528905",
+            title: "+9188255289055",
             subHref: "tel"
 
         },

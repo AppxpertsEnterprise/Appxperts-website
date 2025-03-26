@@ -2,13 +2,12 @@
 import aboutThreeData from "@/data/AboutThreeData";
 import Image from "next/image";
 import React, { Fragment, useEffect, useState } from "react";
-import ScrollTrigger from "react-scroll-trigger";
+import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-
 import { Col, Container, Row } from "react-bootstrap";
 import VideoModal from "../VideoModal/VideoModal";
 import AnimatedProgressBar from "../AnimatedProgressBar/AnimatedProgressBar";
+
 const {
   shape,
   shape2,
@@ -32,17 +31,16 @@ const {
 } = aboutThreeData;
 
 const AboutThree = () => {
-  const [counterOn, setCounterOn] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  if (!mounted) return null;
+
   return (
     <>
       <section className='about-three' id="about">
@@ -51,47 +49,38 @@ const AboutThree = () => {
             <Col lg={6}>
               <div className='about-three__image'>
                 <div className='about-three__image__shape'>
-                  <Image src={shape} alt='tolak' />
+                  <Image src={shape} alt='shape' />
                 </div>
                 <div className='about-three__image__shape-two'>
-                  <Image src={shape2} alt='tolak' />
+                  <Image src={shape2} alt='shape2' />
                 </div>
                 <Row>
                   <Col md={6}>
-                    <ScrollTrigger
-                      onEnter={() => setCounterOn(true)}
-                      onExit={() => setCounterOn(false)}
-                    >
-                      <div className='about-three__image__one'>
-                        <Image src={image1} alt='tolak' />
+                    <div ref={ref} className='about-three__image__one'>
+                      <Image src={image1} alt='image1' />
+                    </div>
+                    <div className='about-three__fact count-box'>
+                      <div className='about-three__fact__icon'>
+                        <i className={factIcon}></i>
                       </div>
-                      <div className='about-three__fact count-box'>
-                        <div className='about-three__fact__icon'>
-                          <i className={factIcon}></i>
-                        </div>
-                        <h3 className='about-three__fact__count'>
-                          {counterOn && (
-                            <CountUp
-                              className='count-text'
-                              end={factCount}
-                              duration={1.5}
-                            />
-                          )}
-                          k+
-                        </h3>
-                        <p className='about-three__fact__text'>{factText}</p>
-                      </div>
-                    </ScrollTrigger>
+                      <h3 className='about-three__fact__count'>
+                        {inView && (
+                          <CountUp className='count-text' end={factCount} duration={1.5} />
+                        )}
+                        k+
+                      </h3>
+                      <p className='about-three__fact__text'>{factText}</p>
+                    </div>
                   </Col>
                   <Col md={6}>
                     <div className='about-three__image__two'>
-                      <Image src={image2} alt='tolak' />
+                      <Image src={image2} alt='image2' />
                     </div>
                   </Col>
                 </Row>
               </div>
             </Col>
-            <Col lg={6} className=' wow fadeInRight' data-aos="fade-left" data-aos-delay='200'>
+            <Col lg={6} className='wow fadeInRight' data-aos="fade-left" data-aos-delay='200'>
               <div className='about-three__content'>
                 <div className='sec-title-two text-left'>
                   <h6 className='sec-title-two__tagline'>
@@ -123,32 +112,17 @@ const AboutThree = () => {
                       progress={percentage}
                       title={skillTitle}
                       text={skillText}
-
                     />
-
                   </Col>
                 </Row>
                 <div className='about-three__content__quote'>{contQuote}</div>
                 <Row>
-                  <Col md={5}>
-                    {/* <div className='about-three__content__btn'>
-                      <div
-                        style={{ cursor: "pointer" }}
-                        onClick={() => setOpen(true)}
-                        className='video-popup'
-                      >
-                        <i className='fa fa-play'></i>
-                        <span className='video-popup__btn-ripple'></span>
-                      </div>
-                      Watcing video
-                    </div> */}
-                  </Col>
+                  <Col md={5}></Col>
                   <Col lg={7}>
                     <div className='about-three__content__author'>
                       <div className='about-three__content__author__image'>
-                        <Image src={author} alt='tolak' />
+                        <Image src={author} alt='author' />
                       </div>
-                      {/* <Image src={aboutSign} alt='tolak' /> */}
                       <p className='about-three__content__author__text'>
                         {authorText}
                       </p>

@@ -1,3 +1,4 @@
+"use client";
 import slideTextData from '@/data/SlideTextData';
 import React from 'react';
 const Jarallax = dynamic(() => import("@/components/Jarallax/Jarallax"), {

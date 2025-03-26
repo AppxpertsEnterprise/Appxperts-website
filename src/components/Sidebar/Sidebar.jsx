@@ -67,7 +67,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faInstagram} />
             <span className="sr-only">Instagram</span>
           </Link>
-          <Link href="https://wa.me/+91 8825528905" target="_blank">
+          <Link href="https://wa.me/+9188255289055" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} />
             <span className="sr-only">WhatsApp</span>
           </Link>
