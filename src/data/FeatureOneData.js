@@ -2,8 +2,8 @@ import shape1 from '@/assets/images/shapes/feature-1-shape-1.png'
 import shape2 from '@/assets/images/shapes/feature-1-shape-2.png'
 
 const featureOneData = {
-    tagLine: "Our Company Status",
-    title: "The Success of our Solution",
+    tagLine: "About AppXperts",
+    title: "Pillar of Our Success",
     items: [
         {
             id: 1,
@@ -34,11 +34,7 @@ const featureOneData = {
             icon: "icon-trophy",
             title: "Authenticity",
             text: "You can be easily duped by thier assertions that big agencies change exorbitant rates.",
-            title: "Authenticity",
-            text: "You can be easily duped by thier assertions that big agencies change exorbitant rates.",
-
-
-
+            shape: shape2
         },
     ]
 

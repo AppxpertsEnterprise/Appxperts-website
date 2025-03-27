@@ -16,9 +16,9 @@ const ctaOneData = {
     author2,
     author3,
     icon: "icon-best-price",
-    title: "Solution System Design",
+    title: "Innovative System Architecture",
 
-    text: "At AppXperts, we engineer scalable, efficient, and user-centric software solutions. Our system design approach emphasizes innovation.",
+    text: "At AppXperts, we design robust, scalable, and intuitive software solutions. Our approach focuses on cutting-edge innovation, ensuring seamless performance and adaptability to evolving business needs.",
 
     conLinkText: "( Let’s Started )",
     href: "contact"

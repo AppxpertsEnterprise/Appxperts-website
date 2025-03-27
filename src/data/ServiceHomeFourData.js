@@ -9,8 +9,8 @@ import image6 from '@/assets/images/resources/service-1-6.jpg'
 const serviceHomeFourData = {
     bg,
     shape,
-    tagLine: "Our Best Service",
-    title: "We Kinds of Services Business",
+    tagLine: "Our Service",
+    title: "Your ONE Stop Solution",
     items: [
         {
             id: 1,
