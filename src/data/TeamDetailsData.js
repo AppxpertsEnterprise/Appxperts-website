@@ -6,7 +6,7 @@ const teamDetailsData = {
     image: teamImage,
     name: "Mohamed Aasif",
     about: "Phis are bound to ensue; and equal blame belongs to those who through weakness of will, which is the same as through.We have the and industry expertise to develop solutions that can connect.",
-    contact: "+918825528905",
+    contact: "+919952746738",
     subHref: "tel",
     socialLinks: [
         { name: "Facebook", href: "https://facebook.com", icon: "fab fa-facebook-f" },

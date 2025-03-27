@@ -18,8 +18,8 @@ const contactTwoData = {
       id: 1,
       icon: "icon-phone-call",
       title: "Call This Now",
-      text: "+918825528905",
-      href: "+918825528905",
+      text: "+919952746738",
+      href: "+919952746738",
       subHref: "tel",
     },
     {
@@ -64,7 +64,7 @@ const contactTwoData = {
     {
       id: 2,
       icon: faWhatsapp,  // WhatsApp icon
-      link: "https://wa.me/+918825528905", // WhatsApp link with your number
+      link: "https://wa.me/+919952746738", // WhatsApp link with your number
       name: "WhatsApp",
     },
     // {

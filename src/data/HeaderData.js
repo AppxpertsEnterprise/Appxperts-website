@@ -160,7 +160,7 @@ const navItems = [
 
 const social = [
   { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram", target: "_blank" },
-  { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp", target: "_blank" },
+  { id: 2, icon: faWhatsapp, link: "https://wa.me/+919952746738", name: "WhatsApp", target: "_blank" },
   { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook", target: "_blank" },
 ];
 
@@ -256,7 +256,7 @@ const headerData = {
       id: 6,
       icon: faPhone,  
       content: "Call", // Updated call content
-      href: "tel:+918825528905",  
+      href: "tel:+919952746738",  
     },
   ],
 

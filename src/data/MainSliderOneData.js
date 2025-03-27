@@ -15,7 +15,7 @@ const mainSliderOneData = [
         text: "Empowering enterprises with advanced software development services tailored to meet your business needs.",
         social: [
             { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram" },
-            { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
+            { id: 2, icon: faWhatsapp, link: "https://wa.me/+919952746738", name: "WhatsApp" },
             { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
         ],
         floatingText: "Innovate"
@@ -29,7 +29,7 @@ const mainSliderOneData = [
         text: "Transform your ideas into powerful software solutions that scale with your business.",
         social: [
             { id: 1, icon: faInstagram, link: "https://instagram.com/Appxperts.solution", name: "Instagram" },
-            { id: 2, icon: faWhatsapp, link: "https://wa.me/+918825528905", name: "WhatsApp" },
+            { id: 2, icon: faWhatsapp, link: "https://wa.me/+919952746738", name: "WhatsApp" },
             { id: 3, icon: faFacebookF, link: "https://facebook.com/AppXes", name: "Facebook" },
         ],
         floatingText: "Grow"

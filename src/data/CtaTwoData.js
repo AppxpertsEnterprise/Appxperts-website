@@ -16,13 +16,13 @@ const ctaTwoData = {
     texts: [
         {
             id: 1,
-            title: "India  +91882552890",
+            title: "India  +919952746738",
             subHref: "tel"
 
         },
         {
             id: 2,
-            title: "Singapore  +65843993175",
+            title: "Singapore  +6584399317",
             subHref: "tel"
 
         },
@@ -35,7 +35,7 @@ const ctaTwoData = {
     ],
     contTitle: "Solution Company",
     contText: "We can provide you with a reliable \n Please input an email address",
-    href: "+91882552890",
+    href: "+919952746738",
     subHref: "tel"
 
 };
